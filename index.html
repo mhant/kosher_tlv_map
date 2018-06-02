@@ -79,6 +79,9 @@
       });
         
         
+        
+        
+        
       }, function(error, response) {
         alert( error.message);
       });
@@ -173,7 +176,8 @@
       var mapOptions = {
         zoom: 14,
         center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        //rotateControl: true,
       }
       map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
     }
