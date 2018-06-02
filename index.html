@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -141,7 +145,7 @@
     if( display ) {
      
         if ( address.rest_type == 'מסעדות' || address.rest_type == 'קונדיטוריות' ) {
-            var colour='1' ; //this is a filename prefix, in case we need to rename the files
+			var colour = "";
             if ( address.kosher_type.includes( 'חלבי') ) {
                 colour += 'blue' ;          
             } 
