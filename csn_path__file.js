@@ -1,0 +1,1 @@
+var cdn_path = 'https://cdn.glitch.com/ffdfbb43-c131-4266-9a56-857db78fc4b2%2F' ;

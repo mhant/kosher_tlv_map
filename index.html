@@ -11,12 +11,13 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <meta name="viewport" content="initial-scale=1">
+  <meta name="viewport"  content ="initial-scale=1">
   <title>Kosher Rest Tel Aviv</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <script src="addresses_bool.js" charset="utf-8"></script>
+  <script src="cdn_path_file.js" charset="utf-8"></script>
   <div class="wrapper" id="wrapper">
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
@@ -68,6 +69,16 @@
           lng: position.coords.longitude
         };
         map.setCenter(pos);
+            map.setZoom(17) ;
+              //map.setIcon("http://maps.google.com/mapfiles/ms/icons/yellow.png") ;
+        
+      var marker = new google.maps.Marker({
+        map: map,
+        position:pos,
+        icon: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
+      });
+        
+        
       }, function(error, response) {
         alert( error.message);
       });
@@ -125,22 +136,28 @@
 
 
     if( display ) {
-
-      if ( address.rest_type == 'מסעדות' || address.rest_type == 'קונדיטוריות' ) {
-        if ( address.kosher_type.includes('בשרי') ) {
-          iconURL = 'http://maps.google.com/mapfiles/ms/icons/red' + mehadrin + '.png' ;
-        } else if ( address.kosher_type.includes( 'חלבי') ) {
-          iconURL = 'http://maps.google.com/mapfiles/ms/icons/blue' + mehadrin + '.png' ;
-        } else if ( address.kosher_type.includes('פרוה')) {
-          iconURL = 'http://maps.google.com/mapfiles/ms/icons/green' + mehadrin + '.png' ;
-        } else {
-          iconURL = 'http://maps.google.com/mapfiles/ms/icons/orange' + mehadrin + '.png' ;
+     
+        if ( address.rest_type == 'מסעדות' || address.rest_type == 'קונדיטוריות' ) {
+            var colour='1' ; //this is a filename prefix, in case we need to rename the files
+            if ( address.kosher_type.includes( 'חלבי') ) {
+                colour += 'blue' ;          
+            } 
+            if ( address.kosher_type.includes('בשרי') ) {
+                colour += 'red' ;          
+            } 
+            if ( address.kosher_type.includes('פרוה')) {
+                colour += 'green' ;           
+            }         
+            iconURL = cdn_path + colour + '.png' ;
+                       
+        } else if ( address.rest_type == 'בתי מלון' ) {
+            iconURL = 'http://maps.google.com/mapfiles/ms/icons/pink' + mehadrin + '.png' ;
+                       
+        } else {//other things like hotels and supermarkets, fruit/veg shops, butchers and fishmongers
+              iconURL = 'http://maps.google.com/mapfiles/ms/icons/yellow' + mehadrin + '.png' ;
         }
-      } else {//other things like hotels and supermarkets, fruit/veg shops, butchers and fishmongers
-        iconURL = 'http://maps.google.com/mapfiles/ms/icons/yellow' + mehadrin + '.png' ;
-      }
-
-    }
+         
+       }
 
     return {
       iconURL: iconURL ,
@@ -163,7 +180,7 @@
     else{
       clearMarkers();
     }
-    for(var i = 0; i < addresses.length; i++){
+    for(var i = 1; i < addresses.length; i++){ //now starting from element 1, since 0 is the column titles.
       var rest = addresses[i];
 
       filterResult = filterAddress( rest, filter_type) ;
