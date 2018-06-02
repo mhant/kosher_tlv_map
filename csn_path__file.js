@@ -1,1 +1,1 @@
-var cdn_path = 'https://cdn.glitch.com/ffdfbb43-c131-4266-9a56-857db78fc4b2%2F' ;
+var cdn_path = 'https://github.com/mhant/kosher_tlv_map/blob/master/assets/icon_' ;
