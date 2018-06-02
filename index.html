@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="initial-scale=1">
+  <title>Kosher Rest Tel Aviv</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="addresses_bool.js" charset="utf-8"></script>
+  <div class="wrapper" id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#" id = "sidebar-title">
+            Advanced Options
+          </a>
+        </li>
+        <li>
+          <button id="center_button" onclick="recenter()">
+            CENTER
+          </button>
+        </li>
+        <li>
+          Kosher Type:
+          <select  id="kosher_type_select" onchange="init(this.value);">
+            <option value="0">all</option>
+            <option value="בשרי">בשרי meaty</option>
+            <option value="חלבי">חלבי dairy</option>
+            <option value="פרוה">פרוה parve</option>
+          </select>
+        </li>
+        <li>
+          <span>A Michael, Ed, and Tali Production</span>
+        </li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>Kosher Rest Tel Aviv</h1>
+      Places with a Teudat Kashrut from the Tel Aviv Rabanut <br />
+
+      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Advanced Options</a>
+
+    </div>
+    <div class="content">
+      <div id="googleMap"></div>
+    </div>
+  </div>
+
+  <script>
+  var map;
+  var markers = [];
+  function recenter(){
+    if (navigator && navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+        map.setCenter(pos);
+      }, function(error, response) {
+        alert( error.message);
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      alert("no geolocation");
+    }
+  }
+  function attachSecretMessage(marker, secretMessage) {
+    var infowindow = new google.maps.InfoWindow({
+      content: secretMessage
+    });
+
+    marker.addListener('click', function() {
+      infowindow.open(marker.get('map'), marker);
+    });
+  }
+
+  function clearMarkers(){
+    for(var i=0; i < markers.length;i++){
+      markers[i].setMap(null);
+    }
+    markers = [];
+  }
+
+
+  function filterAddress(address, filter_type) {
+    //filters and returns true for any place we don't want to display.
+    //also sets the icon url on the ones we want to keep.
+    var iconURL ;
+    var display = true ;
+    var typesToIgnore = ['בית ספר לבישול','בתי אבות','בתי חולים','מפעל','אולמות אירועים'] ;
+    var mehadrin = '' ;
+    if (filter_type == "0"){
+      filter_type = null;
+    }
+
+    //first test for rest type.
+    //do we want to completely ignore it?
+    for ( var i = 0 ; i < typesToIgnore.length ; i++ ){
+      if( typesToIgnore[i].match( address.rest_type ) ){
+        display = false ;
+      }
+      if (filter_type && !address.kosher_type.includes(filter_type)){
+        display = false ;
+      }
+    }
+
+    if( display ) {
+      var kosher_type_array = address.kosher_type.split(",") ;
+      for ( var i = 0 ; i < kosher_type_array.length ; i++ )
+      if( kosher_type_array[i].match( 'מהדרין' ) )
+      mehadrin = '-dot' ;
+    }
+
+
+    if( display ) {
+
+      if ( address.rest_type == 'מסעדות' || address.rest_type == 'קונדיטוריות' ) {
+        if ( address.kosher_type.includes('בשרי') ) {
+          iconURL = 'http://maps.google.com/mapfiles/ms/icons/red' + mehadrin + '.png' ;
+        } else if ( address.kosher_type.includes( 'חלבי') ) {
+          iconURL = 'http://maps.google.com/mapfiles/ms/icons/blue' + mehadrin + '.png' ;
+        } else if ( address.kosher_type.includes('פרוה')) {
+          iconURL = 'http://maps.google.com/mapfiles/ms/icons/green' + mehadrin + '.png' ;
+        } else {
+          iconURL = 'http://maps.google.com/mapfiles/ms/icons/orange' + mehadrin + '.png' ;
+        }
+      } else {//other things like hotels and supermarkets, fruit/veg shops, butchers and fishmongers
+        iconURL = 'http://maps.google.com/mapfiles/ms/icons/yellow' + mehadrin + '.png' ;
+      }
+
+    }
+
+    return {
+      iconURL: iconURL ,
+      display : display
+    };
+  }
+
+
+  function init(filter_type){
+    //if first init, otherwise check filter_type
+    if (!filter_type){
+      var latlng = new google.maps.LatLng(32.071936, 34.777017);
+      var mapOptions = {
+        zoom: 14,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+    }
+    else{
+      clearMarkers();
+    }
+    for(var i = 0; i < addresses.length; i++){
+      var rest = addresses[i];
+
+      filterResult = filterAddress( rest, filter_type) ;
+
+      if ( !filterResult.display )
+      continue ; //skip this place.
+
+      var address = rest.rest_addr;
+      var name = rest.rest_name;
+      var type = rest.rest_type;
+      var kosher_type = rest.kosher_type;
+      var expire = rest.kosher_exp;
+      var rest_lat = parseFloat(addresses[i].lat);
+      var rest_lng = parseFloat(addresses[i].lng);
+      var location = {lat: rest_lat, lng: rest_lng};
+      var learn_more_link = "<br /><a target='_blank' href='http://maps.google.com/?q=" + encodeURIComponent(name) + "&ll=" + rest_lat + "," + rest_lng + "'>more info</a>";
+      if (name === null){name = '';}
+      var marker = new google.maps.Marker({
+        map: map,
+        position:location,
+        title: name,
+        icon: filterResult.iconURL,
+      });
+      markers.push(marker);
+      attachSecretMessage(marker, "<br /><br /><b>" + name + "</b><br />place type: " + type + "<br />type: " + kosher_type + "<br />" + address + "<br />teudah expires: " + expire + learn_more_link);
+    }
+  }
+  $(function() {
+    $('#center_button').on('click touchstart',function (e) {
+      recenter();
+    })
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+  $("#sidebar-title").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6DI0RFRFx_yUg7-7wcotQivO6ju9FtLk&callback=init&language=iw  ">
+  </script>
+</body>
+</html>
