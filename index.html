@@ -79,6 +79,7 @@
   <script>
   var map;
   var markers = [];
+  var me_marker;
   function recenter(){
     if (navigator && navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
@@ -90,7 +91,12 @@
             map.setZoom(17) ;
               //map.setIcon("http://maps.google.com/mapfiles/ms/icons/yellow.png") ;
         
-      var marker = new google.maps.Marker({
+        if( me_marker ) {//delete existing me marker, and create another one.
+          me_marker.setMap(null);
+          delete me_marker ;
+        }
+          
+        me_marker = new google.maps.Marker({
         map: map,
         position:pos,
         icon: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
