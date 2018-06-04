@@ -91,7 +91,7 @@
             map.setZoom(17) ;
               //map.setIcon("http://maps.google.com/mapfiles/ms/icons/yellow.png") ;
         
-        if( me_marker ) {//delete existing me marker, and create another one.
+        if( me_marker.getMap() ) {//delete existing me marker, and create another one.
           me_marker.setMap(null);
           delete me_marker ;
         }
