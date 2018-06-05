@@ -1053,7 +1053,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'נפחא 3',
 'lat':'32.0044402',32.0696049,34.7724731
-'lng':'34.7447492',
+'lng':'34.7447492'
 //'reason':'The road is just called נפחא not יצחק נפחא'
 },{
 'rest_name':'בייקשופ - קפה',
@@ -1766,7 +1766,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 24',
 'lat':'32.0523723',
-'lng':'34.7891597',
+'lng':'34.7891597'
 //'reason':'The road name is actually אצ"ל not האצ"ל'
 },{
 'rest_name':'האופה מבגדד',
@@ -1903,7 +1903,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'הלוחמים 1, Holon',
 'lat':'32.036491',
-'lng':'34.7594088',
+'lng':'34.7594088'
 //'reason':'The address is officially in Holon, not Tel Aviv'
 },{
 'rest_name':'הכליף',
@@ -2912,7 +2912,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 87',
 'lat':'32.0482852',
-'lng':'34.7931646',
+'lng':'34.7931646'
 //'reason':'The road name is actually אצ"ל not האצ"ל'
 },{
 'rest_name':'לב ים',
@@ -3041,7 +3041,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'שזר 11',
 'lat':'32.0386409',
-'lng':'34.7664039',
+'lng':'34.7664039'
 //'reason':'The street name is just שזר not זלמן שזר. Even though the sign on the shop itself says זלמן שזר'
 },{
 'rest_name':'לחם בוכרי',
@@ -3370,7 +3370,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 41',
 'lat':'32.0518497',
-'lng':'34.789501',
+'lng':'34.789501'
 //'reason':'The road name is actually אצ"ל not האצ"ל'
 },{
 'rest_name':'מאפית הטאבון',
@@ -4379,7 +4379,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'אבן גבירול 61',
 'lat':'32.0787143',
-'lng':'34.7811354',
+'lng':'34.7811354'
 //'reason':'The name on the Rabanut website is Sushi Plus, but the restaurant is actually the Waffle Bar. The Teudah does have the name Waffle Bar on it, we checked!'
 },{
 'rest_name':'סושי קונה בר',
@@ -4764,7 +4764,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 65',
 'lat':'32.0503935',
-'lng':'34.7898249',
+'lng':'34.7898249'
 //'reason':'The road name is actually אצ"ל not האצ"ל'
 },{
 'rest_name':'פינת השלושה',
@@ -5229,7 +5229,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'Lehi Rd 91',
 'lat':'32.0471859',
-'lng':'34.7974669',
+'lng':'34.7974669'
 //'reason':'Address is Derech Lehi, not Derech Lod'
 },{
 'rest_name':'פלאפל תדמור',
@@ -5462,7 +5462,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'יום טוב 1',
 'lat':'32.0679014',
-'lng':'34.765096', 
+'lng':'34.765096'
 //'reason':'The listed address יו"ט 1 is abbreviated and not googleable. Real address to google is: יום טוב 1'
 },{
 'rest_name':'ציפורה אקספרס',
@@ -5807,7 +5807,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'מטלון 47',
 'lat':'32.0588371',
-'lng':'34.7711944',
+'lng':'34.7711944'
 //'reason':'Street is just called מטלון not משה מטלון.'
 },{
 'rest_name':'קמילו',
@@ -6128,7 +6128,7 @@
 'kosher_exp':'29/09/2018',
 'rest_addr':'בניין משפטים, אוניברסיטת תל אביב',
 'lat':'32.1116819',
-'lng':'34.8035492',
+'lng':'34.8035492'
 //'reason':'Address could not be found on Google'
 },{
 'rest_name':'קרולינה אוכל ביתי',
