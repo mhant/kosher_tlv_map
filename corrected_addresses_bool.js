@@ -3705,9 +3705,10 @@
 'rest_type':'בתי מלון',
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'חבקוק 3',
-'lat':'32.0873254',
-'lng':'34.8359581'
+'rest_addr':'חבקוק הנביא 3',
+'lat':'32.0936835',
+'lng':'34.7707663'
+//'reason':'Full street name is חבקוק הנביא'
 },{
 'rest_name':'ממפיס',
 'rest_type':'מסעדות',
@@ -4305,9 +4306,10 @@
 'rest_type':'איטליזים',
 'kosher_type':'בשרי,מהדרין',
 'kosher_exp':'29/09/2018',
-'rest_addr':'נתן 4',
-'lat':'32.0835049',
-'lng':'34.8175653'
+'rest_addr':'נתן הנביא 4',
+'lat':'32.0524347',
+'lng':'34.791482'
+//'reason':'Address is not complete. Full name of the street is נתן הנביא 4'
 },{
 'rest_name':'סופר קופיקס',
 'rest_type':'מסעדות',
@@ -6351,9 +6353,10 @@
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'נוח מוזס 22',
-'lat':'32.0932867',
-'lng':'34.8121573'
+'rest_addr':'מוזס נח 22',
+'lat':'32.0755506',
+'lng':'34.7949556'
+//'reason':'The street is not googleable. The full street name is מוזס יהודה ונח 22, תל אביב יפו or מוזס נח 22'
 },{
 'rest_name':'ריי אירועים',
 'rest_type':'אולמות אירועים',
