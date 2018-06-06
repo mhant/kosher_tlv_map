@@ -1,4 +1,4 @@
-﻿var addresses = [{
+var addresses = [{
 'rest_name':'שם העסק',
 'rest_type':'סוג העסק',
 'kosher_type':'כשרות',
@@ -5102,8 +5102,9 @@
 'kosher_type':'פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הלוחמים 11',
-'lat':'32.0297338',
-'lng':'34.7716345'
+'lat':'32.0364944',
+'lng':'34.7593957'
+//'reason':'This street address is in Holon'  
 },{
 'rest_name':'פלאפל אבי / פאני אקספרס',
 'rest_type':'מסעדות',
