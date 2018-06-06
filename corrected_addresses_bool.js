@@ -1052,8 +1052,8 @@
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'נפחא 3',
-'lat':'32.0044402',
-'lng':'34.7447492'
+'lat':'32.0696789',
+'lng':'34.7718633'
 //'reason':'The road is just called נפחא not יצחק נפחא'
 },{
 'rest_name':'בייקשופ - קפה',
