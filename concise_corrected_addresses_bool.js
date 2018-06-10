@@ -6,6 +6,7 @@ var addresses = [{
 'rest_addr':'נפחא 3',
 'lat':'32.0696789',
 'lng':'34.7718633',
+'mod_type':'correction',
 'reason':'The road is just called נפחא not יצחק נפחא',
 'id':'3513'
 },{
@@ -16,6 +17,7 @@ var addresses = [{
 'rest_addr':'אצ"ל 24',
 'lat':'32.0523723',
 'lng':'34.7891597',
+'mod_type':'correction',
 'reason':'The road name is actually אצ"ל not האצ"ל',
 'id':'3106'
 },{
@@ -26,6 +28,7 @@ var addresses = [{
 'rest_addr':'הלוחמים 1, Holon',
 'lat':'32.036491',
 'lng':'34.7594088',
+'mod_type':'correction',
 'reason':'The address is officially in Holon, not Tel Aviv',
 'id':'3081'
 },{
@@ -36,6 +39,7 @@ var addresses = [{
 'rest_addr':'אצ"ל 87',
 'lat':'32.0482852',
 'lng':'34.7931646',
+'mod_type':'correction',
 'reason':'The road name is actually אצ"ל not האצ"ל',
 'id':'3856'
 },{
@@ -46,6 +50,7 @@ var addresses = [{
 'rest_addr':'שזר 11',
 'lat':'32.0386409',
 'lng':'34.7664039',
+'mod_type':'correction',
 'reason':'The street name is just שזר not זלמן שזר. Even though the sign on the shop itself says זלמן שזר',
 'id':'3130'
 },{
@@ -56,6 +61,7 @@ var addresses = [{
 'rest_addr':'אצ"ל 41',
 'lat':'32.0518497',
 'lng':'34.789501',
+'mod_type':'correction',
 'reason':'The road name is actually אצ"ל not האצ"ל',
 'id':'3113'
 },{
@@ -66,6 +72,7 @@ var addresses = [{
 'rest_addr':'חבקוק הנביא 3',
 'lat':'32.0936835',
 'lng':'34.7707663',
+'mod_type':'correction',
 'reason':'Full street name is חבקוק הנביא',
 'id':'3022'
 },{
@@ -76,6 +83,7 @@ var addresses = [{
 'rest_addr':'נתן הנביא 4',
 'lat':'32.0524347',
 'lng':'34.791482',
+'mod_type':'correction',
 'reason':'Address is not complete. Full name of the street is נתן הנביא 4',
 'id':'2952'
 },{
@@ -86,6 +94,7 @@ var addresses = [{
 'rest_addr':'אבן גבירול 61',
 'lat':'32.0787143',
 'lng':'34.7811354',
+'mod_type':'correction',
 'reason':'The name on the Rabanut website is Sushi Plus, but the restaurant is actually the Waffle Bar. The Teudah does have the name Waffle Bar on it, we checked!',
 'id':'3751'
 },{
@@ -96,6 +105,7 @@ var addresses = [{
 'rest_addr':'אצ"ל 65',
 'lat':'32.0503935',
 'lng':'34.7898249',
+'mod_type':'correction',
 'reason':'The road name is actually אצ"ל not האצ"ל',
 'id':'3787'
 },{
@@ -106,6 +116,8 @@ var addresses = [{
 'rest_addr':'הלוחמים 11',
 'lat':'32.0364944',
 'lng':'34.7593957',
+'mod_type':'correction',
+'mod_type':'correction',
 'reason':'This street address is in Holon',
 'id':'3091' 
 },{
@@ -126,6 +138,7 @@ var addresses = [{
 'rest_addr':'יום טוב 1',
 'lat':'32.0679014',
 'lng':'34.765096',
+'mod_type':'correction',
 'reason':'The listed address יו"ט 1 is abbreviated and not googleable. Real address to google is: יום טוב 1',
 'id':'2967'
 },{
@@ -136,6 +149,7 @@ var addresses = [{
 'rest_addr':'מטלון 47',
 'lat':'32.0588371',
 'lng':'34.7711944',
+'mod_type':'correction',
 'reason':'Street is just called מטלון not משה מטלון.',
 'id':'3265'
 },{
@@ -146,6 +160,7 @@ var addresses = [{
 'rest_addr':'בניין משפטים, אוניברסיטת תל אביב',
 'lat':'32.1116819',
 'lng':'34.8035492',
+'mod_type':'correction',
 'reason':'Address could not be found on Google',
 'id':'3716'
 },{
@@ -156,6 +171,18 @@ var addresses = [{
 'rest_addr':'מוזס נח 22',
 'lat':'32.0755506',
 'lng':'34.7949556',
+'mod_type':'correction',
 'reason':'The street is not googleable. The full street name is מוזס יהודה ונח 22, תל אביב יפו or מוזס נח 22',
 'id':'3573'
+},{
+'rest_name':'קייטרינג התאנה',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי,בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'מרמורק 28',
+'lat':'32.0711529',
+'lng':'34.78148'
+'mod_type':'hide',
+'reason':'This is not a restaurant open to the public, it is a catering company',
+'id':'3713'
 },];
