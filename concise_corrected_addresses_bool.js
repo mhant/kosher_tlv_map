@@ -117,7 +117,6 @@ var addresses = [{
 'lat':'32.0364944',
 'lng':'34.7593957',
 'mod_type':'correction',
-'mod_type':'correction',
 'reason':'This street address is in Holon',
 'id':'3091' 
 },{
@@ -128,6 +127,7 @@ var addresses = [{
 'rest_addr':'Lehi Rd 91',
 'lat':'32.0471859',
 'lng':'34.7974669',
+'mod_type':'correction',
 'reason':'Address is Derech Lehi, not Derech Lod',
 'id':'3542'
 },{
@@ -174,6 +174,17 @@ var addresses = [{
 'mod_type':'correction',
 'reason':'The street is not googleable. The full street name is מוזס יהודה ונח 22, תל אביב יפו or מוזס נח 22',
 'id':'3573'
+},{
+'rest_name':'איטליט',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'בן יהודה 69',
+'lat':'32.0803161',
+'lng':'34.7699044'
+'mod_type':'correction',
+'reason':'The restaurant name is איטליט  not איטלית ',
+'id':'3474'
 },{
 'rest_name':'קייטרינג התאנה',
 'rest_type':'מסעדות',
