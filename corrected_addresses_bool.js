@@ -383,7 +383,7 @@ var addresses = [{
 'lat':'32.0477493',
 'lng':'34.7587615'
 },{
-'rest_name':'איטלית',
+'rest_name':'איטליט',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
