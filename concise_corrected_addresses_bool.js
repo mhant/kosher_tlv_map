@@ -181,7 +181,7 @@ var addresses = [{
 'kosher_exp':'29/09/2018',
 'rest_addr':'בן יהודה 69',
 'lat':'32.0803161',
-'lng':'34.7699044'
+'lng':'34.7699044',
 'mod_type':'correction',
 'reason':'The restaurant name is איטליט  not איטלית ',
 'id':'3474'
@@ -192,7 +192,7 @@ var addresses = [{
 'kosher_exp':'29/09/2018',
 'rest_addr':'מרמורק 28',
 'lat':'32.0711529',
-'lng':'34.78148'
+'lng':'34.78148',
 'mod_type':'hide',
 'reason':'This is not a restaurant open to the public, it is a catering company',
 'id':'3713'
