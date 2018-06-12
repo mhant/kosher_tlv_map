@@ -57,9 +57,11 @@
   <script>
       for (var i = 0; i < addresses.length; i++) {
         var rest = addresses[i];
+        var mod_type = rest.mod_type;
+        if (mod_type == 'hide_completely') //hide completely, and not even list here.
+          continue;
         var name = rest.rest_name;
         var address = rest.rest_addr;
-        var mod_type = rest.mod_type;
         var reason = rest.reason;
         document.write('<br>Name: ' + name + '<br>Address: ' + address + '<br>Modification type: ' + mod_type + '<br>Reason: ' + reason + '<br>');
       }
