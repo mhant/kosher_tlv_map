@@ -61,6 +61,7 @@ parser.feed(redux_text)
 final_list = []
 tel_aviv_u = ' תל אביב'
 tel_aviv = tel_aviv_u.decode('utf8')
+coords = {}
 count = 0
 with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 	f.write("var addresses = [");
@@ -68,34 +69,43 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 		table_len = len(rest)
 		if (table_len == 6 or table_len == 5):
 			count = count + 1
+			
+			name = rest[0].replace("'","")
+			type = rest[1].replace("'","")
+			kosher_type = rest[2].replace("'","")
+			place = 5
+			if table_len == 5:
+				place = 4
+			kosher_exp = rest[place].replace("'","")
+			location = rest[3] + tel_aviv
+			location = location.replace("'","")
+			address = rest[3].replace("'","")
+			
+			#now check if this is on our correction list
+			
+			
 			f.write("{\n")
 			# name of place
 			f.write("'rest_name':'")
-			name = rest[0].replace("'","")
+			
 			f.write(name)
 			f.write("',\n")
 			# type of place
 			f.write("'rest_type':'")
-			type = rest[1].replace("'","")
+			
 			f.write(type)
 			f.write("',\n")
 			# type of koshrut (meat, milky, both)
 			f.write("'kosher_type':'")
-			kosher_type = rest[2].replace("'","")
+			
 			f.write(kosher_type)
 			f.write("',\n")
 			# kashrut expiration
-			place = 5
-			if table_len == 5:
-				place = 4
 			f.write("'kosher_exp':'")
-			kosher_exp = rest[place].replace("'","")
 			f.write(kosher_exp)
 			f.write("',\n")
 			# street address
-			location = rest[3] + tel_aviv
 			f.write("'rest_addr':'")
-			address = rest[3].replace("'","")
 			f.write(address)
 			f.write("',\n")
 			geo_url = goe_code_url_pre + urllib.quote(location.replace("'","").encode('utf-8')) + goe_code_url_post
@@ -104,8 +114,21 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 			if ('results' in json and len(json['results']) > 0):
 				lat = json['results'][0]['geometry']['location']['lat']
 				lng = json['results'][0]['geometry']['location']['lng']
+				
+				
+				for i in range( 0, 1000 ):
+					key = str(lat) + "_" + str(lng)
+					if key in coords: #something already exists at that lat_lng. offset it and try again
+						lat += 0.00003
+						lng += 0.00003
+					else: #noone at that position yet.
+						coords[key] = 1
+						break
+				
 				f.write("'lat':'" + str(lat) + "',\n")
 				f.write("'lng':'" + str(lng) + "'")
+			else:
+				f.write("//No results\n")
 			f.write("\n},")
 			# f.write(str(counter) + " ============================================\n")
 			#
