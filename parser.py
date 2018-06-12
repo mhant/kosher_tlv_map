@@ -6,6 +6,7 @@ import requests
 from HTMLParser import HTMLParser
 import codecs
 import urllib
+import sys
 
 class KosherParser(HTMLParser):
 	in_td = False
@@ -50,7 +51,10 @@ class KosherParser(HTMLParser):
 		elif tag == 'table':
 			self.in_table = False
 
-goe_code_url_post = '&key=AIzaSyAXKy5A6Sls8mn8XRqnFZUGJ7WkxdsPvBc'
+if len(sys.argv) < 2:
+  print "Need google map key!"
+  sys.exit(22);
+goe_code_url_post = '&key=' + sys.argv[1]
 goe_code_url_pre = 'https://maps.googleapis.com/maps/api/geocode/json?address='
 kosher_url = "http://www.rabanut.co.il/Sapakim/show/comp/comps.aspx"
 r = requests.get(kosher_url)
@@ -69,7 +73,7 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 		table_len = len(rest)
 		if (table_len == 6 or table_len == 5):
 			count = count + 1
-			
+
 			name = rest[0].replace("'","")
 			type = rest[1].replace("'","")
 			kosher_type = rest[2].replace("'","")
@@ -80,24 +84,24 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 			location = rest[3] + tel_aviv
 			location = location.replace("'","")
 			address = rest[3].replace("'","")
-			
+
 			#now check if this is on our correction list
-			
-			
+
+
 			f.write("{\n")
 			# name of place
 			f.write("'rest_name':'")
-			
+
 			f.write(name)
 			f.write("',\n")
 			# type of place
 			f.write("'rest_type':'")
-			
+
 			f.write(type)
 			f.write("',\n")
 			# type of koshrut (meat, milky, both)
 			f.write("'kosher_type':'")
-			
+
 			f.write(kosher_type)
 			f.write("',\n")
 			# kashrut expiration
@@ -114,8 +118,8 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 			if ('results' in json and len(json['results']) > 0):
 				lat = json['results'][0]['geometry']['location']['lat']
 				lng = json['results'][0]['geometry']['location']['lng']
-				
-				
+
+
 				for i in range( 0, 1000 ):
 					key = str(lat) + "_" + str(lng)
 					if key in coords: #something already exists at that lat_lng. offset it and try again
@@ -124,7 +128,7 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 					else: #noone at that position yet.
 						coords[key] = 1
 						break
-				
+
 				f.write("'lat':'" + str(lat) + "',\n")
 				f.write("'lng':'" + str(lng) + "'")
 			else:
