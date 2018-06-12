@@ -52,8 +52,8 @@ class KosherParser(HTMLParser):
 			self.in_table = False
 
 if len(sys.argv) < 2:
-  print "Need google map key!"
-  sys.exit(22);
+	print "Need google map key!"
+	sys.exit(22);
 goe_code_url_post = '&key=' + sys.argv[1]
 goe_code_url_pre = 'https://maps.googleapis.com/maps/api/geocode/json?address='
 kosher_url = "http://www.rabanut.co.il/Sapakim/show/comp/comps.aspx"
