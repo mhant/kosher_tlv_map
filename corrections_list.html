@@ -2,31 +2,6 @@
 <html>
 
 <head>
-<!--  
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId: '621107394906919',
-        xfbml: true,
-        version: 'v2.10'
-      });
-
-      FB.AppEvents.logPageView();
-
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {
-        return;
-      }
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -37,7 +12,6 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <meta name="viewport" content="initial-scale=1">
   <title>Kosher Tel Aviv Map - Modifications List</title>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -46,16 +20,16 @@
 
 <body>
 
-      <h1>Kosher Tel Aviv Map - List of Modifications </h1> 
+      <h1>Kosher Tel Aviv Map - List of Modifications </h1>
   If you click on the link to the Rabanut website, you may be as surprised as we were to find out exactly how many places are under the supervision of the Rabanut.<br>
 
-  There are   
+  There are
   <script src="corrected_addresses_bool.js" charset="utf-8"></script>
-  <script> 
-    document.write(addresses.length); 
+  <script>
+    document.write(addresses.length);
   </script>
   establishments on the list.<br>
-  
+
   However, just from the list alone, it is hard to find where they all are in one go. Ed asked the Rabanut to show the locations on a map, but it's wasn't something they could do very quickly, and he was getting hungry.<br>
   He mentioned this to Michael, and Michael said, "It shouldn't be too difficult to scrape the data from the Rabanut website and plot it on a Google map". It was difficult. But he did it in a week!<br>
   He used python with HTMLParser to create a list that could be used in javascript on a web page. He developed the web pages on Glitch, and later moved to hosting on GitHub.<br>
@@ -63,7 +37,7 @@
   Because the data is from the Rabanut list, we don't have much information to add at the moment. We can't tell you if a place is a 5 star restaurant, or a felafel stall. Sometimes these are canteens in private offices where the public can't go, and we are trying to filter those out as people let us know about them.<br>
   We hope you have fun exploring new places. We have certainly found new places right around the corner that we never knew existed.<br>
   <br>
-  We are trying to use the raw data from the Rabanut list, without interfering too much. However, some of the addresses just aren't Googleable, so we had to modify a few.<br>  
+  We are trying to use the raw data from the Rabanut list, without interfering too much. However, some of the addresses just aren't Googleable, so we had to modify a few.<br>
   Here are the modifications we have made to the original Rabanut data. <br>
   Typically, these are "corrections" to the addresses because the text in the Rabanut database cannot be found on Google maps. <br>
   Other types of corrections may be "hide" where a place may not be open to the public, such as the restaurant in a private office. <br>
