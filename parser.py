@@ -7,6 +7,9 @@ from HTMLParser import HTMLParser
 import codecs
 import urllib
 import sys
+import datetime
+
+from correction_addresses import * 
 
 class KosherParser(HTMLParser):
 	in_td = False
@@ -54,6 +57,10 @@ class KosherParser(HTMLParser):
 if len(sys.argv) < 2:
 	print "Need google map key!"
 	sys.exit(22);
+	
+start_time = datetime.datetime.now();
+
+	
 goe_code_url_post = '&key=' + sys.argv[1]
 goe_code_url_pre = 'https://maps.googleapis.com/maps/api/geocode/json?address='
 kosher_url = "http://www.rabanut.co.il/Sapakim/show/comp/comps.aspx"
@@ -63,11 +70,20 @@ parser = KosherParser()
 redux_text = r.text.replace('&','+').replace('\t','')
 parser.feed(redux_text)
 final_list = []
-tel_aviv_u = ' תל אביב'
+tel_aviv_u = ' תל אביב יפו'
 tel_aviv = tel_aviv_u.decode('utf8')
 coords = {}
+
+
+typesToIgnore = ['בית ספר לבישול', 'בתי אבות','בתי חולים', 'מפעל', 'אולמות אירועים'];
+ignored = 0; #r_type was in typesToIgnore
+corrected = 0; #was in the corrections list
+hidden = 0;  #was in teh corrections list to be hidden.
+
 count = 0
-with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
+with codecs.open("corrected_addresses_bool.js", 'wb',  'utf-8') as f:
+	now = datetime.datetime.now()
+	f.write("var parser_run_date = \""+ now.strftime("%d-%m-%y %H:%M") +"\"\n");
 	f.write("var addresses = [");
 	for rest in parser.table_data:
 		table_len = len(rest)
@@ -75,7 +91,7 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 			count = count + 1
 
 			name = rest[0].replace("'","")
-			type = rest[1].replace("'","")
+			r_type = rest[1].replace("'","")
 			kosher_type = rest[2].replace("'","")
 			place = 5
 			if table_len == 5:
@@ -84,10 +100,32 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 			location = rest[3] + tel_aviv
 			location = location.replace("'","")
 			address = rest[3].replace("'","")
-
+			
+			#check if we should ignore this type
+			if ( r_type in typesToIgnore ):
+				ignored += 1;
+				continue;
+			
 			#now check if this is on our correction list
-
-
+			break1=False
+			for place in correction_addresses:
+				if( place['orig_rest_name'] == name and place['orig_rest_addr'] == address ):
+					if( place['mod_type'] != 'hide' ):
+						name = place['rest_name']
+						address = place['rest_addr']
+						location = address + tel_aviv
+						location = location.replace("'","")
+						kosher_type = place['kosher_type']
+						corrected += 1;
+						break #from the correction loop
+					else:
+						hidden += 1;
+						break1=True
+						break #out of the place loop
+			if( break1 ):
+				continue #next in the rest loop		
+			
+			
 			f.write("{\n")
 			# name of place
 			f.write("'rest_name':'")
@@ -96,8 +134,8 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 			f.write("',\n")
 			# type of place
 			f.write("'rest_type':'")
-
-			f.write(type)
+			
+			f.write(r_type)
 			f.write("',\n")
 			# type of koshrut (meat, milky, both)
 			f.write("'kosher_type':'")
@@ -132,7 +170,7 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 				f.write("'lat':'" + str(lat) + "',\n")
 				f.write("'lng':'" + str(lng) + "'")
 			else:
-				f.write("//No results\n")
+				f.write("//No results. has the google key been used up?\n")
 			f.write("\n},")
 			# f.write(str(counter) + " ============================================\n")
 			#
@@ -143,7 +181,7 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 			# f.write( urllib.quote(location.replace("'","").encode('utf-8')))
 			# f.write( goe_code_url_post)
 			# f.write( "\n============================================\n")
-	f.write("];");
+	f.write("];\n\n");
 # 		final_list.append(rest)
 # with codecs.open("addresses.js", 'wb',  'utf-8') as f:
 # 	f.write("var addresses = [");
@@ -164,3 +202,100 @@ with codecs.open("addresses_bool.js", 'wb',  'utf-8') as f:
 # 			#f.write("'rest_phone':'" +  rest[4].encode("UTF-16") + "',\n")
 # 			#f.write("'expire_kosher':'" +  rest[3].encode("UTF-16") + "'\n},")
 # 	f.write("];");
+
+	f.write("var num_ignored="+str(ignored)+";\n");
+	f.write("var num_corrected="+str(corrected)+";\n");
+	f.write("var num_hidden="+str(hidden)+";\n");
+
+	end_time = datetime.datetime.now();
+	f.write("var parser_duration_seconds="+str((end_time-start_time).total_seconds())+";\n");
+
+
+
+#now output a file of the corrections.
+with codecs.open("concise_corrected_addresses_bool.js", 'wb',  'utf-8') as f:
+	f.write("var addresses = [");
+	for address in correction_addresses:
+			f.write("{\n")
+			
+			# name of place
+			f.write("'orig_rest_name':'")
+			
+			f.write(address['orig_rest_name'])
+			f.write("',\n")
+			
+			
+			# type of place
+			f.write("'orig_rest_type':'")
+			
+			f.write(address['orig_rest_type'])
+			f.write("',\n")
+			
+			
+			# type of koshrut (meat, milky, both)
+			f.write("'orig_kosher_type':'")
+			
+			f.write(address['orig_kosher_type'])
+			f.write("',\n")
+			
+						
+			
+			# street address
+			f.write("'orig_rest_addr':'")
+			f.write(address['orig_rest_addr'])
+			f.write("',\n")
+
+			
+			
+			
+			
+			# name of place
+			f.write("'rest_name':'")
+			
+			f.write(address['rest_name'])
+			f.write("',\n")
+			
+			
+			# type of place
+			f.write("'rest_type':'")
+			
+			f.write(address['rest_type'])
+			f.write("',\n")
+			
+			
+			# type of koshrut (meat, milky, both)
+			f.write("'kosher_type':'")
+			
+			f.write(address['kosher_type'])
+			f.write("',\n")
+			
+			
+			# kashrut expiration
+			f.write("'kosher_exp':'")
+			f.write(address['kosher_exp'])
+			f.write("',\n")
+			
+			
+			# street address
+			f.write("'rest_addr':'")
+			f.write(address['rest_addr'])
+			f.write("',\n")
+
+			# street address
+			f.write("'mod_type':'")
+			f.write(address['mod_type'])
+			f.write("',\n")
+		
+			# street address
+			f.write("'reason':'")
+			f.write(address['reason'])
+			f.write("',\n")
+		
+			# street address
+			f.write("'id':'")
+			f.write(address['id'])
+			f.write("'\n},")
+		
+
+	f.write("];\n");
+	
