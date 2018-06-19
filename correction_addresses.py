@@ -49,7 +49,7 @@ correction_addresses = {
 'rest_type':'מסעדות',
 'kosher_type':'בשרי,מהדרין',
 'kosher_exp':'29/09/2018',
-'rest_addr':'הלוחמים 1, Holon',
+'rest_addr':'הלוחמים 1',
 'lat':'32.036491',
 'lng':'34.7594088',
 'mod_type':'correction',
@@ -203,11 +203,11 @@ correction_addresses = {
 'rest_type':'מסעדות',
 'kosher_type':'פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
-'rest_addr':'הלוחמים 1, Holon',
+'rest_addr':'הלוחמים 1',
 'lat':'32.036491',
 'lng':'34.7594088',
 'mod_type':'query',
-'reason':'There are no restaurants at this address. Check with the Rabanut. is it: הלוחמים 1, Holon ?',
+'reason':'Address is: הלוחמים 1, Holon ?',
 'id':'3091' 
 },{
 'orig_rest_name':'פלאפל שרעבי',
