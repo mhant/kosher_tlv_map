@@ -83,7 +83,10 @@
       src="corrected_addresses_bool.js"
       charset="utf-8"
     ></script>
-      <script
+    <script
+      src="temp_addresses_to_hide.js"
+      charset="utf-8"
+    ></script>      <script
         src="cdn_path_file.js"
         charset="utf-8"
       ></script>
@@ -303,6 +306,20 @@
                     if (filter_type == "0") {
                       filter_type = null;
                     }
+                    
+                    //check to see if this was in the temporary hide list
+                   for (var i = 0; i < addresses_to_hide.length; i++) {
+                      if (addresses_to_hide[i].rest_name.match(address.rest_name) && addresses_to_hide[i].rest_addr.match(address.rest_addr)) {
+                        display = false;
+                        return {
+                      iconURL: iconURL,
+                      display: display
+                      };
+                      }
+                   }
+                     
+                    
+                    
                     //first test for rest type.
                     //do we want to completely ignore it?
                     for (var i = 0; i < typesToIgnore.length; i++) {
