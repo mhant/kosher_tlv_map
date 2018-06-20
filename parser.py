@@ -269,13 +269,7 @@ with codecs.open("concise_corrected_addresses_bool.js", 'wb',  'utf-8') as f:
 			f.write(address['kosher_type'])
 			f.write("',\n")
 			
-			
-			# kashrut expiration
-			f.write("'kosher_exp':'")
-			f.write(address['kosher_exp'])
-			f.write("',\n")
-			
-			
+
 			# street address
 			f.write("'rest_addr':'")
 			f.write(address['rest_addr'])
