@@ -1,3 +1,4 @@
+var parser_run_date = "20-06-18 23:03"
 var addresses = [{
 'rest_name':'שם העסק',
 'rest_type':'סוג העסק',
@@ -223,14 +224,6 @@ var addresses = [{
 'lat':'32.0707205',
 'lng':'34.7825503'
 },{
-'rest_name':'אולם אירועים 1947',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'השרון 10',
-'lat':'32.0620312',
-'lng':'34.7787691'
-},{
 'rest_name':'אולם בית קרנדגי',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי,בשרי',
@@ -238,22 +231,6 @@ var addresses = [{
 'rest_addr':'אוריאל אקוסטה 7',
 'lat':'32.0576447',
 'lng':'34.7689552'
-},{
-'rest_name':'אולמי איסט ת"א',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'קרמינצקי 12',
-'lat':'32.0666336',
-'lng':'34.7949783'
-},{
-'rest_name':'אולמי יד חרוצים',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יד חרוצים 11',
-'lat':'32.0620046',
-'lng':'34.7827753'
 },{
 'rest_name':'אומנות קולינרית בוטריטיס בע"מ',
 'rest_type':'מסעדות',
@@ -270,14 +247,6 @@ var addresses = [{
 'rest_addr':'בן יהודה 148',
 'lat':'32.0859971',
 'lng':'34.7730428'
-},{
-'rest_name':'אוצה',
-'rest_type':'מפעל',
-'kosher_type':'פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יוסף קארו 30',
-'lat':'32.0704701',
-'lng':'34.7920845'
 },{
 'rest_name':'אורבן פוד URBAN FOOD',
 'rest_type':'מסעדות',
@@ -311,14 +280,6 @@ var addresses = [{
 'lat':'32.0995811',
 'lng':'34.7744483'
 },{
-'rest_name':'אושן',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'גני התערוכה',
-'lat':'32.1055476',
-'lng':'34.8090756'
-},{
 'rest_name':'אחים והמאכלים',
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
@@ -340,8 +301,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'התקוה 13',
-'lat':'32.0529157',
-'lng':'34.7905141'
+'lat':'32.0529162',
+'lng':'34.790512'
 },{
 'rest_name':'אחים שרעבי - קונדיטורית יאן',
 'rest_type':'קונדיטוריות',
@@ -420,8 +381,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון רמת אביב',
-'lat':'32.1122475',
-'lng':'34.7960499'
+'lat':'32.1122997',
+'lng':'34.7959903'
 },{
 'rest_name':'אילןס בית קפה',
 'rest_type':'מסעדות',
@@ -519,14 +480,6 @@ var addresses = [{
 'lat':'32.0525728',
 'lng':'34.7910448'
 },{
-'rest_name':'אסותא',
-'rest_type':'בתי חולים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הברזל 20',
-'lat':'32.1079092',
-'lng':'34.8387532'
-},{
 'rest_name':'אספרסו אמריקה בע"מ',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי,בשרי',
@@ -534,14 +487,6 @@ var addresses = [{
 'rest_addr':'דניאל פריש 1',
 'lat':'32.074515',
 'lng':'34.7824895'
-},{
-'rest_name':'אפקה',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'בני אפרים 228',
-'lat':'32.1174081',
-'lng':'34.8183887'
 },{
 'rest_name':'אצל מיקי',
 'rest_type':'מסעדות',
@@ -580,8 +525,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון רמת אביב',
-'lat':'32.112277500000005',
-'lng':'34.7960799'
+'lat':'32.112329700000004',
+'lng':'34.7960203'
 },{
 'rest_name':'אר קפה בייקרי',
 'rest_type':'מסעדות',
@@ -596,8 +541,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 20',
-'lat':'32.107939200000004',
-'lng':'34.8387832'
+'lat':'32.1079092',
+'lng':'34.8387532'
 },{
 'rest_name':'ארד הרצל בע"מ סנדוויץ ארד',
 'rest_type':'מסעדות',
@@ -678,22 +623,6 @@ var addresses = [{
 'rest_addr':'הברזל 34',
 'lat':'32.110397',
 'lng':'34.8418987'
-},{
-'rest_name':'ארקה',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יורדי הסירה 1',
-'lat':'32.0964756',
-'lng':'34.7740091'
-},{
-'rest_name':'ארקו',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'המנור 14',
-'lat':'32.0528412',
-'lng':'34.7717127'
 },{
 'rest_name':'אשכנזי',
 'rest_type':'איטליזים',
@@ -947,9 +876,9 @@ var addresses = [{
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'מתחם האוניברסיטה',
-'lat':'32.107504',
-'lng':'34.8030815'
+'rest_addr':'גורג וייז 20',
+'lat':'32.1079982',
+'lng':'34.8027072'
 },{
 'rest_name':'בורגרס - בר',
 'rest_type':'מסעדות',
@@ -1007,14 +936,6 @@ var addresses = [{
 'lat':'32.07416690000001',
 'lng':'34.792292800000006'
 },{
-'rest_name':'בי"ח צהלון',
-'rest_type':'בתי חולים',
-'kosher_type':'חלבי,בשרי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'שד ירושלים 100',
-'lat':'32.0453526',
-'lng':'34.75806499999999'
-},{
 'rest_name':'ביגה',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי,מהדרין',
@@ -1043,17 +964,17 @@ var addresses = [{
 'rest_type':'איטליזים',
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'יו"ט 17',
-'lat':'32.051584',
-'lng':'34.8021255'
+'rest_addr':'יום טוב 17',
+'lat':'32.0685173',
+'lng':'34.7679088'
 },{
 'rest_name':'בייקרס',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'נפחא 3',
-'lat':'32.0696049',
-'lng':'34.7724731'
+'lat':'32.0696789',
+'lng':'34.7724105'
 },{
 'rest_name':'בייקשופ - קפה',
 'rest_type':'מסעדות',
@@ -1111,22 +1032,6 @@ var addresses = [{
 'lat':'32.068316',
 'lng':'34.7829815'
 },{
-'rest_name':'בית אבות - מושב זקנים',
-'rest_type':'בתי אבות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אלנבי 91',
-'lat':'32.0655766',
-'lng':'34.7722348'
-},{
-'rest_name':'בית אבות שלום',
-'rest_type':'בתי אבות',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'גרץ 11',
-'lat':'32.0858287',
-'lng':'34.7738921'
-},{
 'rest_name':'בית אריאלה',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
@@ -1182,14 +1087,6 @@ var addresses = [{
 'rest_addr':'ההגנה 76',
 'lat':'32.053949',
 'lng':'34.7901075'
-},{
-'rest_name':'בית על הים',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'רציף העליה השניה 105',
-'lat':'32.05517500000001',
-'lng':'34.751971'
 },{
 'rest_name':'בית פרטי לאירועים בע"מ',
 'rest_type':'מסעדות',
@@ -1679,14 +1576,6 @@ var addresses = [{
 'lat':'32.0622241',
 'lng':'34.7697876'
 },{
-'rest_name':'דיור מוגן פאלאס',
-'rest_type':'בתי אבות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ויצמן 18',
-'lat':'32.0818177',
-'lng':'34.7891129'
-},{
 'rest_name':'דיילי איוונסט',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי,בשרי',
@@ -1727,14 +1616,6 @@ var addresses = [{
 'lat':'32.0696523',
 'lng':'34.783801'
 },{
-'rest_name':'דנסינג קמל',
-'rest_type':'מפעל',
-'kosher_type':'פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'התעשיה 12',
-'lat':'32.0671261',
-'lng':'34.7865447'
-},{
 'rest_name':'דקה',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי,מהדרין',
@@ -1764,8 +1645,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 24',
-'lat':'32.0523723',
-'lng':'34.7891597'
+'lat':'32.0523678',
+'lng':'34.7913484'
 },{
 'rest_name':'האופה מבגדד',
 'rest_type':'קונדיטוריות',
@@ -1806,14 +1687,6 @@ var addresses = [{
 'rest_addr':'ישראל גורי 35',
 'lat':'32.0434753',
 'lng':'34.7805257'
-},{
-'rest_name':'האנגר 11',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'נמל תל אביב',
-'lat':'32.09724300000001',
-'lng':'34.773854'
 },{
 'rest_name':'הבאגט של גילה',
 'rest_type':'מסעדות',
@@ -1887,30 +1760,13 @@ var addresses = [{
 'lat':'32.056456',
 'lng':'34.779211'
 },{
-'rest_name':'החמאם',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'מפרץ שלמה 10',
-'lat':'32.0053125',
-'lng':'34.7971922'
-},{
 'rest_name':'הילולים',
 'rest_type':'מסעדות',
 'kosher_type':'בשרי,מהדרין',
 'kosher_exp':'29/09/2018',
-'rest_addr':'הלוחמים 1, Holon',
-'lat':'32.036491',
-'lng':'34.7594088'
-//'reason':'The address is officially in Holon, not Tel Aviv'
-},{
-'rest_name':'הכליף',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הצורפים 33, יפו',
-'lat':'32.0542801',
-'lng':'34.7548631'
+'rest_addr':'הלוחמים 1',
+'lat':'32.0365752',
+'lng':'34.7611515'
 },{
 'rest_name':'הלב הרחב',
 'rest_type':'מסעדות',
@@ -1973,8 +1829,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון רמת אביב',
-'lat':'32.11230750000001',
-'lng':'34.796109900000005'
+'lat':'32.112359700000006',
+'lng':'34.796050300000005'
 },{
 'rest_name':'המקום של אורן',
 'rest_type':'מסעדות',
@@ -1989,8 +1845,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'המבשר 22',
-'lat':'32.0524526',
-'lng':'34.7906345'
+'lat':'32.0524318',
+'lng':'34.7907377'
 },{
 'rest_name':'המקום של רבינו',
 'rest_type':'מסעדות',
@@ -2077,8 +1933,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'גורג וייז 20',
-'lat':'32.1079982',
-'lng':'34.8027072'
+'lat':'32.1080282',
+'lng':'34.8027372'
 },{
 'rest_name':'הקבב של סלומי',
 'rest_type':'איטליזים',
@@ -2087,14 +1943,6 @@ var addresses = [{
 'rest_addr':'נוריאל 13',
 'lat':'32.0524725',
 'lng':'34.791451900000006'
-},{
-'rest_name':'הקומה הרביעית',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'החרש 8',
-'lat':'32.0567643',
-'lng':'34.7839418'
 },{
 'rest_name':'השניצליה',
 'rest_type':'מסעדות',
@@ -2167,14 +2015,6 @@ var addresses = [{
 'rest_addr':'אילת 45',
 'lat':'32.0585458',
 'lng':'34.7651646'
-},{
-'rest_name':'ויולה אירועים',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי,מהדרין',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הלוחמים 1',
-'lat':'32.036605200000004',
-'lng':'34.7611815'
 },{
 'rest_name':'ויקטורי',
 'rest_type':'רשתות שיווק',
@@ -2421,8 +2261,8 @@ var addresses = [{
 'kosher_type':'פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יד חרוצים 11',
-'lat':'32.062034600000004',
-'lng':'34.7828053'
+'lat':'32.0620046',
+'lng':'34.7827753'
 },{
 'rest_name':'חומוסים',
 'rest_type':'מסעדות',
@@ -2469,8 +2309,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שוק התקוה 10',
-'lat':'32.0601373',
-'lng':'34.77145050000001'
+'lat':'32.0531602',
+'lng':'34.79055530000001'
 },{
 'rest_name':'חלה מתוקה',
 'rest_type':'קונדיטוריות',
@@ -2479,14 +2319,6 @@ var addresses = [{
 'rest_addr':'מח"ל 20',
 'lat':'32.0491341',
 'lng':'34.8029897'
-},{
-'rest_name':'חלום יעקב',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ישראל גורי 34',
-'lat':'32.0420736',
-'lng':'34.7809997'
 },{
 'rest_name':'חן המחודשת',
 'rest_type':'מסעדות',
@@ -2544,14 +2376,6 @@ var addresses = [{
 'lat':'32.0571486',
 'lng':'34.7748935'
 },{
-'rest_name':'טוזורו',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'משה סנה 199 רמת השרון',
-'lat':'32.1323266',
-'lng':'34.8317169'
-},{
 'rest_name':'טוסטר',
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
@@ -2567,14 +2391,6 @@ var addresses = [{
 'rest_addr':'קניון עזריאלי קומה א',
 'lat':'32.07422690000001',
 'lng':'34.79235280000001'
-},{
-'rest_name':'טוסי על הגג',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'קניון עזריאלי',
-'lat':'32.074256900000016',
-'lng':'34.79238280000001'
 },{
 'rest_name':'טופיה',
 'rest_type':'מסעדות',
@@ -2672,14 +2488,6 @@ var addresses = [{
 'lat':'32.0626161',
 'lng':'34.7791714'
 },{
-'rest_name':'טראסק',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'מגרשי התערוכה 1',
-'lat':'32.0969284',
-'lng':'34.7751521'
-},{
 'rest_name':'טרטין',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
@@ -2727,14 +2535,6 @@ var addresses = [{
 'rest_addr':'גרינבוים 41',
 'lat':'32.04111580000001',
 'lng':'34.7657632'
-},{
-'rest_name':'ייצור גלידות פאלטאס',
-'rest_type':'מפעל',
-'kosher_type':'חלבי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'י.ל. פרץ 23',
-'lat':'32.0595377',
-'lng':'34.7754462'
 },{
 'rest_name':'ים צבעים בצלחת',
 'rest_type':'מסעדות',
@@ -2909,9 +2709,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 87',
-'lat':'32.0482852',
-'lng':'34.7931646'
-//'reason':'The road name is actually אצ"ל not האצ"ל'
+'lat':'32.0484389',
+'lng':'34.7931939'
 },{
 'rest_name':'לב ים',
 'rest_type':'דגים',
@@ -2998,8 +2797,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שד רוקח - גני התערוכה',
-'lat':'32.105577600000004',
-'lng':'34.8091056'
+'lat':'32.1055476',
+'lng':'34.8090756'
 },{
 'rest_name':'לופו',
 'rest_type':'מסעדות',
@@ -3017,14 +2816,6 @@ var addresses = [{
 'lat':'32.0634646',
 'lng':'34.7812262'
 },{
-'rest_name':'לורנס',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הצורפים 18',
-'lat':'32.0538349',
-'lng':'34.7540525'
-},{
 'rest_name':'לחם ארז',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
@@ -3038,9 +2829,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שזר 11',
-'lat':'32.0386409',
-'lng':'34.7664039'
-//'reason':'The street name is just שזר not זלמן שזר. Even though the sign on the shop itself says זלמן שזר'
+'lat':'32.0386364',
+'lng':'34.7685926'
 },{
 'rest_name':'לחם בוכרי',
 'rest_type':'מסעדות',
@@ -3231,8 +3021,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תרס"ט א 4',
-'lat':'32.0730713',
-'lng':'34.7787907'
+'lat':'32.073248',
+'lng':'34.778761'
 },{
 'rest_name':'לשובע',
 'rest_type':'מסעדות',
@@ -3367,9 +3157,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 41',
-'lat':'32.0518497',
-'lng':'34.789501'
-//'reason':'The road name is actually אצ"ל not האצ"ל'
+'lat':'32.051875200000005',
+'lng':'34.7917197'
 },{
 'rest_name':'מאפית הטאבון',
 'rest_type':'קונדיטוריות',
@@ -3394,14 +3183,6 @@ var addresses = [{
 'rest_addr':'לינקולן 9',
 'lat':'32.0670113',
 'lng':'34.7818096'
-},{
-'rest_name':'מבשלים חוויה',
-'rest_type':'בית ספר לבישול',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'בן צבי 78',
-'lat':'32.0433182',
-'lng':'34.7701239'
 },{
 'rest_name':'מגיק בורגר',
 'rest_type':'מסעדות',
@@ -3704,9 +3485,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'חבקוק הנביא 3',
-'lat':'32.0936835',
-'lng':'34.7707663'
-//'reason':'Full street name is חבקוק הנביא'
+'lat':'32.0935645',
+'lng':'34.7730239'
 },{
 'rest_name':'ממפיס',
 'rest_type':'מסעדות',
@@ -3809,8 +3589,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יד חרוצים 11',
-'lat':'32.06206460000001',
-'lng':'34.7828353'
+'lat':'32.062034600000004',
+'lng':'34.7828053'
 },{
 'rest_name':'מקדונלדס - הסניף הכשר',
 'rest_type':'מסעדות',
@@ -3833,8 +3613,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון רמת אביב',
-'lat':'32.11233750000001',
-'lng':'34.79613990000001'
+'lat':'32.11238970000001',
+'lng':'34.79608030000001'
 },{
 'rest_name':'מקור הפיצוחים',
 'rest_type':'מסעדות',
@@ -3937,8 +3717,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 20',
-'lat':'32.10796920000001',
-'lng':'34.838813200000004'
+'lat':'32.107939200000004',
+'lng':'34.8387832'
 },{
 'rest_name':'מתוקה',
 'rest_type':'קונדיטוריות',
@@ -3977,8 +3757,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ישראל גורי 34',
-'lat':'32.042103600000004',
-'lng':'34.781029700000005'
+'lat':'32.0420736',
+'lng':'34.7809997'
 },{
 'rest_name':'נודלס 36',
 'rest_type':'מסעדות',
@@ -4089,8 +3869,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ישראל גורי 34',
-'lat':'32.04213360000001',
-'lng':'34.78105970000001'
+'lat':'32.042103600000004',
+'lng':'34.781029700000005'
 },{
 'rest_name':'נסי באמצע היום',
 'rest_type':'מסעדות',
@@ -4273,8 +4053,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שביל המפעל 6',
-'lat':'32.0508225',
-'lng':'34.7730035'
+'lat':'32.0509178',
+'lng':'34.7728994'
 },{
 'rest_name':'סומך יוסף',
 'rest_type':'איטליזים',
@@ -4305,9 +4085,8 @@ var addresses = [{
 'kosher_type':'בשרי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'נתן הנביא 4',
-'lat':'32.0524347',
-'lng':'34.791482'
-//'reason':'Address is not complete. Full name of the street is נתן הנביא 4'
+'lat':'32.0523952',
+'lng':'34.7909258'
 },{
 'rest_name':'סופר קופיקס',
 'rest_type':'מסעדות',
@@ -4375,12 +4154,11 @@ var addresses = [{
 },{
 'rest_name':'Waffle Bar',
 'rest_type':'מסעדות',
-'kosher_type':'בשרי',
+'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אבן גבירול 61',
 'lat':'32.0787143',
 'lng':'34.7811354'
-//'reason':'The name on the Rabanut website is Sushi Plus, but the restaurant is actually the Waffle Bar. The Teudah does have the name Waffle Bar on it, we checked!'
 },{
 'rest_name':'סושי קונה בר',
 'rest_type':'מסעדות',
@@ -4397,14 +4175,6 @@ var addresses = [{
 'rest_addr':'בן אביגדור 19',
 'lat':'32.0670113',
 'lng':'34.7910677'
-},{
-'rest_name':'סטוקו אירועים',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'שטרית 2',
-'lat':'32.1057907',
-'lng':'34.8174398'
 },{
 'rest_name':'סטקיית דן גריל',
 'rest_type':'מסעדות',
@@ -4582,14 +4352,6 @@ var addresses = [{
 'lat':'32.0703525',
 'lng':'34.7831716'
 },{
-'rest_name':'פאפה באבל ישראל',
-'rest_type':'מפעל',
-'kosher_type':'פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'דיזינגוף 179',
-'lat':'32.0854029',
-'lng':'34.7744298'
-},{
 'rest_name':'פארק פלאזה אורכידאה',
 'rest_type':'בתי מלון',
 'kosher_type':'חלבי,בשרי',
@@ -4613,14 +4375,6 @@ var addresses = [{
 'rest_addr':'ויצמן 2',
 'lat':'32.0776223',
 'lng':'34.789136400000004'
-},{
-'rest_name':'פוד סטפס',
-'rest_type':'בית ספר לבישול',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ישראל בק 40',
-'lat':'32.0681521',
-'lng':'34.7917199'
 },{
 'rest_name':'פול דני',
 'rest_type':'מסעדות',
@@ -4710,14 +4464,6 @@ var addresses = [{
 'lat':'32.0792868',
 'lng':'34.7816028'
 },{
-'rest_name':'פורט',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הצורפים 15',
-'lat':'32.0538347',
-'lng':'34.7539522'
-},{
 'rest_name':'פז -"זיו און"',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
@@ -4763,9 +4509,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 65',
-'lat':'32.0503935',
-'lng':'34.7898249'
-//'reason':'The road name is actually אצ"ל not האצ"ל'
+'lat':'32.050389',
+'lng':'34.7920136'
 },{
 'rest_name':'פינת השלושה',
 'rest_type':'מסעדות',
@@ -5099,9 +4844,9 @@ var addresses = [{
 'rest_type':'מסעדות',
 'kosher_type':'פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
-'rest_addr':'הלוחמים 11',
-'lat':'32.0297338',
-'lng':'34.7716345'
+'rest_addr':'הלוחמים 1',
+'lat':'32.036605200000004',
+'lng':'34.7611815'
 },{
 'rest_name':'פלאפל אבי / פאני אקספרס',
 'rest_type':'מסעדות',
@@ -5228,9 +4973,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'Lehi Rd 91',
-'lat':'32.0471859',
-'lng':'34.7974669'
-//'reason':'Address is Derech Lehi, not Derech Lod'
+'lat':'32.0473274',
+'lng':'34.7974941'
 },{
 'rest_name':'פלאפל תדמור',
 'rest_type':'מסעדות',
@@ -5429,8 +5173,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון רמת אביב',
-'lat':'32.11236750000001',
-'lng':'34.79616990000001'
+'lat':'32.11241970000001',
+'lng':'34.79611030000001'
 },{
 'rest_name':'צור',
 'rest_type':'מסעדות',
@@ -5461,9 +5205,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יום טוב 1',
-'lat':'32.0679014',
-'lng':'34.765096'
-//'reason':'The listed address יו"ט 1 is abbreviated and not googleable. Real address to google is: יום טוב 1'
+'lat':'32.0678614',
+'lng':'34.7673845'
 },{
 'rest_name':'ציפורה אקספרס',
 'rest_type':'מסעדות',
@@ -5737,14 +5480,6 @@ var addresses = [{
 'lat':'32.0763747',
 'lng':'34.771076'
 },{
-'rest_name':'קייטרינג התאנה',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'מרמורק 28',
-'lat':'32.0711529',
-'lng':'34.78148'
-},{
 'rest_name':'קייטרינג חתונה אחרת',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי,בשרי',
@@ -5806,17 +5541,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'מטלון 47',
-'lat':'32.0588371',
-'lng':'34.7711944'
-//'reason':'Street is just called מטלון not משה מטלון.'
-},{
-'rest_name':'קמילו',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'גורג וויז 24',
-'lat':'32.108479',
-'lng':'34.802943'
+'lat':'32.0588326',
+'lng':'34.7733831'
 },{
 'rest_name':'קנה דג ואל תדאג',
 'rest_type':'דגים',
@@ -5935,8 +5661,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'נמל תל אביב',
-'lat':'32.097273000000015',
-'lng':'34.773884'
+'lat':'32.09724300000001',
+'lng':'34.773854'
 },{
 'rest_name':'קפה גרג הכשר',
 'rest_type':'מסעדות',
@@ -6071,8 +5797,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יורדי הסירה 1',
-'lat':'32.0965056',
-'lng':'34.7740391'
+'lat':'32.0964756',
+'lng':'34.7740091'
 },{
 'rest_name':'קפה קפה עזריאלי',
 'rest_type':'מסעדות',
@@ -6103,16 +5829,16 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 20',
-'lat':'32.10799920000001',
-'lng':'34.83884320000001'
+'lat':'32.10796920000001',
+'lng':'34.838813200000004'
 },{
 'rest_name':'קצב בני מבורך',
 'rest_type':'איטליזים',
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'יו"ט 3',
-'lat':'32.051614',
-'lng':'34.802155500000005'
+'rest_addr':'יום טוב 3',
+'lat':'32.0679183',
+'lng':'34.7674298'
 },{
 'rest_name':'קקאו',
 'rest_type':'מסעדות',
@@ -6127,9 +5853,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'בניין משפטים, אוניברסיטת תל אביב',
-'lat':'32.1116819',
-'lng':'34.8035492'
-//'reason':'Address could not be found on Google'
+'lat':'32.1114924',
+'lng':'34.8037729'
 },{
 'rest_name':'קרולינה אוכל ביתי',
 'rest_type':'מסעדות',
@@ -6352,17 +6077,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'מוזס נח 22',
-'lat':'32.0755506',
-'lng':'34.7949556'
-//'reason':'The street is not googleable. The full street name is מוזס יהודה ונח 22, תל אביב יפו or מוזס נח 22'
-},{
-'rest_name':'ריי אירועים',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'שלבים 14',
-'lat':'32.0508013',
-'lng':'34.7650153'
+'lat':'32.0756506',
+'lng':'34.7944354'
 },{
 'rest_name':'רייטינג בע"מ',
 'rest_type':'מסעדות',
@@ -6379,14 +6095,6 @@ var addresses = [{
 'rest_addr':'קרית עתידים 1',
 'lat':'32.1137588',
 'lng':'34.84244550000001'
-},{
-'rest_name':'רפאל ארועים',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי,מהדרין',
-'kosher_exp':'29/09/2018',
-'rest_addr':'שארית ישראל 37',
-'lat':'32.0519758',
-'lng':'34.7644338'
 },{
 'rest_name':'רפאל בר לחמים',
 'rest_type':'קונדיטוריות',
@@ -6443,14 +6151,6 @@ var addresses = [{
 'rest_addr':'הברזל 3',
 'lat':'32.1068481',
 'lng':'34.835346900000005'
-},{
-'rest_name':'שבע',
-'rest_type':'אולמות אירועים',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הצפירה 19',
-'lat':'32.0611329',
-'lng':'34.7822271'
 },{
 'rest_name':'שוארמה ראש העיר',
 'rest_type':'מסעדות',
@@ -6649,8 +6349,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אוניברסיטה - בנין הספריה',
-'lat':'32.114294',
-'lng':'34.8043761'
+'lat':'32.1147997',
+'lng':'34.8041956'
 },{
 'rest_name':'שוקידה',
 'rest_type':'מסעדות',
@@ -6680,25 +6380,9 @@ var addresses = [{
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'שד רוקח',
-'lat':'32.1007782',
-'lng':'34.7968763'
-},{
-'rest_name':'שטראוס קפה בי.וי - קפה עלית',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ארלוזרוב',
-'lat':'32.084071',
-'lng':'34.787257'
-},{
-'rest_name':'שטראוס קפה בי.וי - קפה עלית',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ארלוזרוב',
-'lat':'32.084101000000004',
-'lng':'34.787287'
+'rest_addr':'95 שד רוקח',
+'lat':'32.1036459',
+'lng':'34.8046111'
 },{
 'rest_name':'שטראוס קפה בי.וי - קפה עלית',
 'rest_type':'מסעדות',
@@ -6777,8 +6461,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'התקווה 13',
-'lat':'32.0529457',
-'lng':'34.790544100000005'
+'lat':'32.0529462',
+'lng':'34.790542'
 },{
 'rest_name':'שמשירי',
 'rest_type':'מסעדות',
@@ -6881,8 +6565,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ישראל גורי 34',
-'lat':'32.04216360000001',
-'lng':'34.78108970000001'
+'lat':'32.04213360000001',
+'lng':'34.78105970000001'
 },{
 'rest_name':'שקד אקספרס',
 'rest_type':'מסעדות',
@@ -6929,8 +6613,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'המבשר 4',
-'lat':'32.0532695',
-'lng':'34.7909197'
+'lat':'32.0532381',
+'lng':'34.79101929999999'
 },{
 'rest_name':'תה מעיין  - כלבו מכבים',
 'rest_type':'מסעדות',
@@ -6956,14 +6640,6 @@ var addresses = [{
 'lat':'32.075239',
 'lng':'34.7815429'
 },{
-'rest_name':'תמרה ארטיק',
-'rest_type':'מפעל',
-'kosher_type':'חלבי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'רזיאל דוד 7',
-'lat':'32.0563664',
-'lng':'34.75877920000001'
-},{
 'rest_name':'תן דג',
 'rest_type':'מסעדות',
 'kosher_type':'פרוה',
@@ -6980,3 +6656,8 @@ var addresses = [{
 'lat':'32.0680555',
 'lng':'34.7672617'
 },];
+
+var num_ignored=36;
+var num_corrected=21;
+var num_hidden=3;
+var parser_duration_seconds=621.719405;

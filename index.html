@@ -83,7 +83,10 @@
       src="corrected_addresses_bool.js"
       charset="utf-8"
     ></script>
-      <script
+    <script
+      src="temp_addresses_to_hide.js"
+      charset="utf-8"
+    ></script>      <script
         src="cdn_path_file.js"
         charset="utf-8"
       ></script>
@@ -244,6 +247,7 @@
                   var map;
                   var markers = [];
                   var me_marker = null;
+                  var last_open_infowindow = null ;
 
                   function recenter() {
                     if (navigator && navigator.geolocation) {
@@ -275,12 +279,15 @@
                     }
                   }
 
-                  function attachSecretMessage(marker, secretMessage) {
+                  function attachSecretMessage(marker, secretMessage) {                      
                     var infowindow = new google.maps.InfoWindow({
                       content: secretMessage
                     });
                     marker.addListener('click', function() {
+                      if ( last_open_infowindow != null )     
+                        last_open_infowindow.close();
                       infowindow.open(marker.get('map'), marker);
+                      last_open_infowindow = infowindow ;
                     });
                   }
 
@@ -303,6 +310,20 @@
                     if (filter_type == "0") {
                       filter_type = null;
                     }
+                    
+                    //check to see if this was in the temporary hide list
+                   for (var i = 0; i < addresses_to_hide.length; i++) {
+                      if (addresses_to_hide[i].rest_name.match(address.rest_name) && addresses_to_hide[i].rest_addr.match(address.rest_addr)) {
+                        display = false;
+                        return {
+                      iconURL: iconURL,
+                      display: display
+                      };
+                      }
+                   }
+                     
+                    
+                    
                     //first test for rest type.
                     //do we want to completely ignore it?
                     for (var i = 0; i < typesToIgnore.length; i++) {
@@ -380,6 +401,7 @@
                         zoom: 14,
                         center: latlng,
                         mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        mapTypeControl: false,
                         //rotateControl: true,
                       }
                       map = new google.maps.Map(document.getElementById(
@@ -406,7 +428,7 @@
                       var learn_more_link =
                         '<br /><button onClick="learnMoreClick(\'' +
                         encodeURIComponent(name) + '\',\'' + rest_lat + '\',\'' +
-                        rest_lng + '\')">more info</button>';
+                        rest_lng + '\')">google it</button>';
                       if (name === null) {
                         name = '';
                       }
@@ -417,10 +439,9 @@
                         icon: filterResult.iconURL,
                       });
                       markers.push(marker);
-                      attachSecretMessage(marker, "<br /><br /><b>" + name +
+                      attachSecretMessage(marker, "<br /><b>" + name +
                         "</b><br />place type: " + type + "<br />type: " +
-                        kosher_type + "<br />" + address +
-                        "<br />teudah expires: " + expire + learn_more_link);
+                        kosher_type + "<br />" + address + learn_more_link);
                     }
                   }
                   function logButtonClick(type){
