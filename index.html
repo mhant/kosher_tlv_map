@@ -247,6 +247,7 @@
                   var map;
                   var markers = [];
                   var me_marker = null;
+                  var last_open_infowindow = null ;
 
                   function recenter() {
                     if (navigator && navigator.geolocation) {
@@ -278,12 +279,15 @@
                     }
                   }
 
-                  function attachSecretMessage(marker, secretMessage) {
+                  function attachSecretMessage(marker, secretMessage) {                      
                     var infowindow = new google.maps.InfoWindow({
                       content: secretMessage
                     });
                     marker.addListener('click', function() {
+                      if ( last_open_infowindow != null )     
+                        last_open_infowindow.close();
                       infowindow.open(marker.get('map'), marker);
+                      last_open_infowindow = infowindow ;
                     });
                   }
 
@@ -397,6 +401,7 @@
                         zoom: 14,
                         center: latlng,
                         mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        mapTypeControl: false,
                         //rotateControl: true,
                       }
                       map = new google.maps.Map(document.getElementById(
@@ -434,10 +439,9 @@
                         icon: filterResult.iconURL,
                       });
                       markers.push(marker);
-                      attachSecretMessage(marker, "<br /><br /><b>" + name +
+                      attachSecretMessage(marker, "<br /><b>" + name +
                         "</b><br />place type: " + type + "<br />type: " +
-                        kosher_type + "<br />" + address +
-                        "<br />teudah expires: " + expire + learn_more_link);
+                        kosher_type + "<br />" + address + learn_more_link);
                     }
                   }
                   function logButtonClick(type){
