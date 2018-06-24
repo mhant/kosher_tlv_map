@@ -279,12 +279,12 @@
                     }
                   }
 
-                  function attachSecretMessage(marker, secretMessage) {                      
+                  function attachSecretMessage(marker, secretMessage) {
                     var infowindow = new google.maps.InfoWindow({
                       content: secretMessage
                     });
                     marker.addListener('click', function() {
-                      if ( last_open_infowindow != null )     
+                      if ( last_open_infowindow != null )
                         last_open_infowindow.close();
                       infowindow.open(marker.get('map'), marker);
                       last_open_infowindow = infowindow ;
@@ -310,7 +310,7 @@
                     if (filter_type == "0") {
                       filter_type = null;
                     }
-                    
+
                     //check to see if this was in the temporary hide list
                    for (var i = 0; i < addresses_to_hide.length; i++) {
                       if (addresses_to_hide[i].rest_name.match(address.rest_name) && addresses_to_hide[i].rest_addr.match(address.rest_addr)) {
@@ -321,9 +321,6 @@
                       };
                       }
                    }
-                     
-                    
-                    
                     //first test for rest type.
                     //do we want to completely ignore it?
                     for (var i = 0; i < typesToIgnore.length; i++) {
