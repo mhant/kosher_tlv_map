@@ -185,6 +185,17 @@
               </li>
             </ul>
           </div>
+          <div class="alert alert-warning alert-dismissible" id="disclaimer">
+            <button
+              href="#"
+              class="close"
+              data-dismiss="alert"
+              aria-label="close"
+              onclick="neverShowAgain()"
+            >&times;</button>
+              <strong>Disclaimer!</strong> <p><b>Please always make sure to check each restaurant's teudah</b>.
+              This data is taken directly from the rabanut website, it may not be completely up to date.</p>
+          </div>
           <div class="header">
             <h1>Kosher Tel Aviv Map</h1> Places with a Teudat Kashrut from the Tel Aviv Rabanut <br />
             <button
@@ -248,6 +259,11 @@
                   var markers = [];
                   var me_marker = null;
                   var last_open_infowindow = null ;
+
+                  function neverShowAgain(){
+                    localStorage.setItem("showDisclaimer","no");
+                      $("#disclaimer").hide();
+                  }
 
                   function recenter() {
                     if (navigator && navigator.geolocation) {
@@ -391,6 +407,18 @@
                   }
 
                   function init(filter_type) {
+                    // check if have shown disclaimer
+                    var show_disc = localStorage.getItem("showDisclaimer");
+                    if (show_disc === null){
+                      show_disc = "yes";
+                      localStorage.setItem("showDisclaimer","yes");
+                    }
+                    if (show_disc === "no"){
+                      $("#disclaimer").hide();
+                    }
+                    else{
+                      $("#disclaimer").show();
+                    }
                     //if first init, otherwise check filter_type
                     if (!filter_type) {
                       var latlng = new google.maps.LatLng(32.071936, 34.777017);
