@@ -61,7 +61,7 @@
               name="viewport"
               content="initial-scale=1"
             >
-              <title>Kosher Tel Aviv Map</title>
+              <title>Kosher TLV Map</title>
               <link
                 rel="shortcut icon"
                 href="assets/favicon.ico"
@@ -185,8 +185,19 @@
               </li>
             </ul>
           </div>
+          <div class="alert alert-warning alert-dismissible" id="disclaimer" hidden>
+            <button
+              href="#"
+              class="close"
+              data-dismiss="alert"
+              aria-label="close"
+              onclick="neverShowAgain()"
+            >&times;</button>
+              <strong>Disclaimer!</strong> <p><b>Please always make sure to check each restaurant's teudah</b>.
+              This data is taken directly from the rabanut website, it may not be completely up to date.</p>
+          </div>
           <div class="header">
-            <h1>Kosher Tel Aviv Map</h1> Places with a Teudat Kashrut from the Tel Aviv Rabanut <br />
+            <h1>Kosher TLV Map</h1> Places with a Teudat Kashrut from the Tel Aviv Rabanut <br />
             <button
               id="center_button"
               onclick="recenter()"
@@ -248,6 +259,11 @@
                   var markers = [];
                   var me_marker = null;
                   var last_open_infowindow = null ;
+
+                  function neverShowAgain(){
+                    localStorage.setItem("showDisclaimer","no");
+                      $("#disclaimer").hide();
+                  }
 
                   function recenter() {
                     if (navigator && navigator.geolocation) {
@@ -480,8 +496,20 @@
                     e.preventDefault();
                     $("#wrapper").toggleClass("toggled");
                   });
-
-
+                  $( document ).ready(function() {
+                    // check if have shown disclaimer
+                    var show_disc = localStorage.getItem("showDisclaimer");
+                    if (show_disc === null){
+                      show_disc = "yes";
+                      localStorage.setItem("showDisclaimer","yes");
+                    }
+                    if (show_disc === "no"){
+                      $("#disclaimer").hide();
+                    }
+                    else{
+                      $("#disclaimer").show();
+                    }
+                  });
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6DI0RFRFx_yUg7-7wcotQivO6ju9FtLk&callback=init&language=iw">
                 </script>
