@@ -185,7 +185,7 @@
               </li>
             </ul>
           </div>
-          <div class="alert alert-warning alert-dismissible" id="disclaimer">
+          <div class="alert alert-warning alert-dismissible" id="disclaimer" hidden>
             <button
               href="#"
               class="close"
@@ -407,18 +407,6 @@
                   }
 
                   function init(filter_type) {
-                    // check if have shown disclaimer
-                    var show_disc = localStorage.getItem("showDisclaimer");
-                    if (show_disc === null){
-                      show_disc = "yes";
-                      localStorage.setItem("showDisclaimer","yes");
-                    }
-                    if (show_disc === "no"){
-                      $("#disclaimer").hide();
-                    }
-                    else{
-                      $("#disclaimer").show();
-                    }
                     //if first init, otherwise check filter_type
                     if (!filter_type) {
                       var latlng = new google.maps.LatLng(32.071936, 34.777017);
@@ -508,8 +496,20 @@
                     e.preventDefault();
                     $("#wrapper").toggleClass("toggled");
                   });
-
-
+                  $( document ).ready(function() {
+                    // check if have shown disclaimer
+                    var show_disc = localStorage.getItem("showDisclaimer");
+                    if (show_disc === null){
+                      show_disc = "yes";
+                      localStorage.setItem("showDisclaimer","yes");
+                    }
+                    if (show_disc === "no"){
+                      $("#disclaimer").hide();
+                    }
+                    else{
+                      $("#disclaimer").show();
+                    }
+                  });
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6DI0RFRFx_yUg7-7wcotQivO6ju9FtLk&callback=init&language=iw">
                 </script>
