@@ -3,13 +3,16 @@
 
 import json
 import requests
-from HTMLParser import HTMLParser
+from html.parser import HTMLParser
 import codecs
 import urllib
-import sys
+import urllib.parse
+from urllib.parse import quote   #now needed in python 3
 import datetime
 
 from correction_addresses import * 
+
+
 
 class KosherParser(HTMLParser):
 	in_td = False
@@ -54,14 +57,12 @@ class KosherParser(HTMLParser):
 		elif tag == 'table':
 			self.in_table = False
 
-if len(sys.argv) < 2:
-	print "Need google map key!"
-	sys.exit(22);
-	
+
 start_time = datetime.datetime.now();
 
-	
-goe_code_url_post = '&key=' + sys.argv[1]
+
+
+goe_code_url_post = '&key=AIzaSyAXKy5A6Sls8mn8XRqnFZUGJ7WkxdsPvBc'
 goe_code_url_pre = 'https://maps.googleapis.com/maps/api/geocode/json?address='
 kosher_url = "http://www.rabanut.co.il/Sapakim/show/comp/comps.aspx"
 r = requests.get(kosher_url)
@@ -71,7 +72,10 @@ redux_text = r.text.replace('&','+').replace('\t','')
 parser.feed(redux_text)
 final_list = []
 tel_aviv_u = ' תל אביב יפו'
-tel_aviv = tel_aviv_u.decode('utf8')
+tel_aviv = tel_aviv_u # in python 3 all strings are decoded. no need for this :tel_aviv_u.decode('utf8')
+
+
+
 coords = {}
 
 
@@ -89,7 +93,7 @@ with codecs.open("corrected_addresses_bool.js", 'wb',  'utf-8') as f:
 		table_len = len(rest)
 		if (table_len == 6 or table_len == 5):
 			count = count + 1
-
+			
 			name = rest[0].replace("'","")
 			r_type = rest[1].replace("'","")
 			kosher_type = rest[2].replace("'","")
@@ -129,35 +133,46 @@ with codecs.open("corrected_addresses_bool.js", 'wb',  'utf-8') as f:
 			f.write("{\n")
 			# name of place
 			f.write("'rest_name':'")
-
+			
 			f.write(name)
 			f.write("',\n")
+			
+			
 			# type of place
 			f.write("'rest_type':'")
 			
 			f.write(r_type)
 			f.write("',\n")
+			
+			
 			# type of koshrut (meat, milky, both)
 			f.write("'kosher_type':'")
-
+			
 			f.write(kosher_type)
 			f.write("',\n")
+			
+			
 			# kashrut expiration
 			f.write("'kosher_exp':'")
 			f.write(kosher_exp)
 			f.write("',\n")
+			
+			
 			# street address
 			f.write("'rest_addr':'")
 			f.write(address)
 			f.write("',\n")
-			geo_url = goe_code_url_pre + urllib.quote(location.replace("'","").encode('utf-8')) + goe_code_url_post
+			
+			
+			#geo_url = goe_code_url_pre + urllib.parse.quote(location.replace("'","").encode('utf-8')) + goe_code_url_post
+			geo_url = goe_code_url_pre + urllib.parse.quote(location.encode('utf-8')) + goe_code_url_post
 			gr = requests.get(geo_url)
 			json = gr.json()
 			if ('results' in json and len(json['results']) > 0):
 				lat = json['results'][0]['geometry']['location']['lat']
 				lng = json['results'][0]['geometry']['location']['lng']
-
-
+ 				
+ 				
 				for i in range( 0, 1000 ):
 					key = str(lat) + "_" + str(lng)
 					if key in coords: #something already exists at that lat_lng. offset it and try again
@@ -166,7 +181,7 @@ with codecs.open("corrected_addresses_bool.js", 'wb',  'utf-8') as f:
 					else: #noone at that position yet.
 						coords[key] = 1
 						break
-
+ 				
 				f.write("'lat':'" + str(lat) + "',\n")
 				f.write("'lng':'" + str(lng) + "'")
 			else:
@@ -269,7 +284,7 @@ with codecs.open("concise_corrected_addresses_bool.js", 'wb',  'utf-8') as f:
 			f.write(address['kosher_type'])
 			f.write("',\n")
 			
-
+			
 			# street address
 			f.write("'rest_addr':'")
 			f.write(address['rest_addr'])
