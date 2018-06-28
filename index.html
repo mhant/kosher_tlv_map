@@ -194,7 +194,7 @@
               onclick="neverShowAgain()"
             >&times;</button>
               <strong>Disclaimer!</strong> <p><b>Please always make sure to check each restaurant's teudah</b>.
-              This data is taken directly from the rabanut website, it may not be completely up to date.</p>
+              This data is taken directly from the rabanut website, so it may not be completely up to date.</p>
           </div>
           <div class="header">
             <h1>Kosher TLV Map</h1> Places with a Teudat Kashrut from the Tel Aviv Rabanut <br />
@@ -259,6 +259,7 @@
                   var markers = [];
                   var me_marker = null;
                   var last_open_infowindow = null ;
+                  var show_disc = null ;
 
                   function neverShowAgain(){
                     localStorage.setItem("showDisclaimer","no");
@@ -300,6 +301,22 @@
                       content: secretMessage
                     });
                     marker.addListener('click', function() {
+                      if ( show_disc == null ) {
+                          // check if have shown disclaimer
+                        show_disc = localStorage.getItem("showDisclaimer");
+                        if (show_disc === null){
+                          show_disc = "yes";
+                          localStorage.setItem("showDisclaimer","yes");
+                        }
+                        if (show_disc === "no"){
+                          $("#disclaimer").hide();
+                        }
+                        else{
+                          $("#disclaimer").show();
+                        }
+                      }
+                      
+                      
                       if ( last_open_infowindow != null )
                         last_open_infowindow.close();
                       infowindow.open(marker.get('map'), marker);
@@ -409,13 +426,24 @@
                   function init(filter_type) {
                     //if first init, otherwise check filter_type
                     if (!filter_type) {
+                      var myStyles =[{
+                            featureType: "poi",
+                            elementType: "labels",
+                            stylers: [
+                                  { visibility: "on" },
+                                  {saturation: '-100'},
+                                  //{lightness:'50' },
+                            ]
+                        }];
                       var latlng = new google.maps.LatLng(32.071936, 34.777017);
                       var mapOptions = {
                         zoom: 14,
                         center: latlng,
                         mapTypeId: google.maps.MapTypeId.ROADMAP,
                         mapTypeControl: false,
-                        //rotateControl: true,
+                        //use either clickableIcons: false, or the styles: myStyles 
+                        clickableIcons: false,
+                        styles: myStyles,
                       }
                       map = new google.maps.Map(document.getElementById(
                         'googleMap'), mapOptions);
@@ -496,20 +524,8 @@
                     e.preventDefault();
                     $("#wrapper").toggleClass("toggled");
                   });
-                  $( document ).ready(function() {
-                    // check if have shown disclaimer
-                    var show_disc = localStorage.getItem("showDisclaimer");
-                    if (show_disc === null){
-                      show_disc = "yes";
-                      localStorage.setItem("showDisclaimer","yes");
-                    }
-                    if (show_disc === "no"){
-                      $("#disclaimer").hide();
-                    }
-                    else{
-                      $("#disclaimer").show();
-                    }
-                  });
+                 // $( document ).ready(function() {
+                  //});
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6DI0RFRFx_yUg7-7wcotQivO6ju9FtLk&callback=init&language=iw">
                 </script>
