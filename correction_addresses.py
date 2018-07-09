@@ -300,11 +300,11 @@ correction_addresses = {
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
 #'kosher_exp':'29/09/2018',
-'rest_addr':'מוזס נח 22',
+'rest_addr':'מוזס יהודה ונח 22',
 #'lat':'32.0755506',
 #'lng':'34.7949556',
 'mod_type':'correction',
-'reason':'The street is not googleable. The full street name is מוזס יהודה ונח 22, תל אביב יפו or מוזס נח 22',
+'reason':'The street is not googleable. The full street name is מוזס יהודה ונח 22, תל אביב יפו ',
 'id':'3573'
 },{
 'orig_rest_name':'איטלית',
