@@ -14,4 +14,9 @@ var addresses_to_hide = [{
 'rest_addr':'שד יהודית 20 , ת"א - יפו',
 'reason':'Not kosher according to their website. Reported by Risi Adler Finkel',
 'id':'3745'
-},];
+},{             
+'rest_name':'דליציה',
+'rest_addr':'בן יהודה 41',
+'reason':'Closed. Reported by Tali',
+'id':'3460'                        
+}];
