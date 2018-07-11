@@ -8345,9 +8345,9 @@ var addresses = [{
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'מוזס נח 22',
-'lat':'32.0932867',
-'lng':'34.8121573'
+'rest_addr':'מוזס יהודה ונח 22',
+'lat':'32.0756506',
+'lng':'34.7944354'
 },{
 'rest_id':'3490',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3490&xsltemplate=1',
