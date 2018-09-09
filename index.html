@@ -198,21 +198,22 @@
           </div>
           <div class="header">
             <h1>Kosher TLV Map</h1> Places with a Teudat Kashrut from the Tel Aviv Rabanut <br />
+            <a
+              href="#menu-toggle"
+              class="glyphicon glyphicon-option-vertical"
+              id="menu-toggle"
+            ></a>
             <button
               id="center_button"
               onclick="recenter()"
+              class="glyphicon glyphicon-map-marker"
             >
-              CENTER
               </button>
-              <a
-                href="#menu-toggle"
-                class="btn btn-secondary"
-                id="menu-toggle"
-              >Advanced Options</a>
-
+              <input id="search_input" class="controls" type="text" placeholder="Search in area">
           </div>
           <div class="content">
-            <div id="googleMap"></div>
+
+            <div id="googleMap">  </div>
           </div>
           </div>
           <!-- Modal -->
@@ -284,7 +285,7 @@
                           me_marker = new google.maps.Marker({
                             map: map,
                             position: pos,
-                            icon: "https://maps.google.com/mapfiles/ms/icons/purple-dot.png",
+                            icon:  new google.maps.MarkerImage('http://maps.gstatic.com/mapfiles/mobile/mobileimgs2.png', new google.maps.Size(22, 22), new google.maps.Point(0, 18), new google.maps.Point(11, 11)),
                           });
                         }
                       }, function(error, response) {
@@ -315,8 +316,8 @@
                           $("#disclaimer").show();
                         }
                       }
-                      
-                      
+
+
                       if ( last_open_infowindow != null )
                         last_open_infowindow.close();
                       infowindow.open(marker.get('map'), marker);
@@ -441,7 +442,7 @@
                         center: latlng,
                         mapTypeId: google.maps.MapTypeId.ROADMAP,
                         mapTypeControl: false,
-                        //use either clickableIcons: false, or the styles: myStyles 
+                        //use either clickableIcons: false, or the styles: myStyles
                         clickableIcons: false,
                         styles: myStyles,
                       }
@@ -524,10 +525,50 @@
                     e.preventDefault();
                     $("#wrapper").toggleClass("toggled");
                   });
-                 // $( document ).ready(function() {
-                  //});
+                 $( document ).ready(function() {
+                                       initAutocomplete();
+                });
+                function initAutocomplete() {
+
+                   // Create the search box and link it to the UI element.
+                   var input = document.getElementById('search_input');
+                   var searchBox = new google.maps.places.SearchBox(input);
+
+                   // Bias the SearchBox results towards current map's viewport.
+                   map.addListener('bounds_changed', function() {
+                     searchBox.setBounds(map.getBounds());
+                   });
+
+                   // Listen for the event fired when the user selects a prediction and retrieve
+                   // more details for that place.
+                   searchBox.addListener('places_changed', function() {
+                     var places = searchBox.getPlaces();
+
+                     if (places.length == 0) {
+                       return;
+                     }
+
+                     // For each place, get the icon, name and location.
+                     var bounds = new google.maps.LatLngBounds();
+                     places.forEach(function(place) {
+                       if (!place.geometry) {
+                         console.log("Returned place contains no geometry");
+                         return;
+                       }
+
+
+                       if (place.geometry.viewport) {
+                         // Only geocodes have viewport.
+                         bounds.union(place.geometry.viewport);
+                       } else {
+                         bounds.extend(place.geometry.location);
+                       }
+                     });
+                     map.fitBounds(bounds);
+                   });
+                 }
                 </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXKy5A6Sls8mn8XRqnFZUGJ7WkxdsPvBc&callback=init&language=iw">
+                <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC5tNymZyzV2DMLnRwYJFJkkGNkCCdTxDI&callback=init">
                 </script>
   </body>
 </html>
