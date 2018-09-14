@@ -1,4 +1,4 @@
-var parser_run_date = "27-06-18 09:05"
+var parser_run_date = "14-09-18 16:33"
 var addresses = [{
 'rest_id':'3283',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3283&xsltemplate=1',
@@ -41,8 +41,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'טשרניחובסקי 1',
-'lat':'32.071228',
-'lng':'34.7704598'
+'lat':'32.0709741',
+'lng':'34.7702078'
 },{
 'rest_id':'3514',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3514&xsltemplate=1',
@@ -63,8 +63,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יגאל אלון 98',
-'lat':'32.0690462',
-'lng':'34.7942991'
+'lat':'32.0699',
+'lng':'34.7939377'
 },{
 'rest_id':'3290',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3290&xsltemplate=1',
@@ -74,8 +74,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שאול המלך 35',
-'lat':'32.0773657',
-'lng':'34.789883'
+'lat':'32.0773805',
+'lng':'34.7898762'
 },{
 'rest_id':'3696',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3696&xsltemplate=1',
@@ -85,19 +85,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יגאל אלון 98',
-'lat':'32.069076200000005',
-'lng':'34.794329100000006'
-},{
-'rest_id':'3576',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3576&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'tutto bene',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'קויפמן 6',
-'lat':'32.0640628',
-'lng':'34.7625084'
+'lat':'32.06993',
+'lng':'34.7939677'
 },{
 'rest_id':'3039',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3039&xsltemplate=1',
@@ -220,6 +209,17 @@ var addresses = [{
 'lat':'32.0641671',
 'lng':'34.787074'
 },{
+'rest_id':'3306',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3306&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'אדון שוקו',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי,בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'הטייסים 128',
+'lat':'32.0459365',
+'lng':'34.8135274'
+},{
 'rest_id':'3587',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3587&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -231,17 +231,6 @@ var addresses = [{
 'lat':'32.0568099',
 'lng':'34.8042674'
 },{
-'rest_id':'3306',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3306&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'אדון שוקו',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הטייסים 128',
-'lat':'32.0459335',
-'lng':'34.8135455'
-},{
 'rest_id':'3687',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3687&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -250,8 +239,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'התקוה 35',
-'lat':'32.0516533',
-'lng':'34.7901616'
+'lat':'32.0515898',
+'lng':'34.7599179'
 },{
 'rest_id':'3786',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3786&xsltemplate=1',
@@ -525,8 +514,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קרית עתידים 1',
-'lat':'32.1137288',
-'lng':'34.84241550000001'
+'lat':'32.1136471',
+'lng':'34.8436381'
 },{
 'rest_id':'3335',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3335&xsltemplate=1',
@@ -547,19 +536,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ויצמן 14',
-'lat':'32.0816779',
-'lng':'34.78927840000001'
-},{
-'rest_id':'3794',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3794&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'אלגמוס',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הברזל 34',
-'lat':'32.110367',
-'lng':'34.8418687'
+'lat':'32.08142780000001',
+'lng':'34.7898728'
 },{
 'rest_id':'3761',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3761&xsltemplate=1',
@@ -571,6 +549,17 @@ var addresses = [{
 'rest_addr':'ריבל 4',
 'lat':'32.0627186',
 'lng':'34.78152'
+},{
+'rest_id':'3794',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3794&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'אלגמוס',
+'rest_type':'מסעדות',
+'kosher_type':'בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'הברזל 34',
+'lat':'32.1091364',
+'lng':'34.8408152'
 },{
 'rest_id':'3213',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3213&xsltemplate=1',
@@ -624,8 +613,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קויפמן 6',
-'lat':'32.064092800000005',
-'lng':'34.762538400000004'
+'lat':'32.0640628',
+'lng':'34.7625084'
 },{
 'rest_id':'3046',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3046&xsltemplate=1',
@@ -723,8 +712,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ויצמן 4',
-'lat':'32.0781665',
-'lng':'34.7885073'
+'lat':'32.0781137',
+'lng':'34.7890099'
 },{
 'rest_id':'3219',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3219&xsltemplate=1',
@@ -745,8 +734,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קיבוץ גלויות 73',
-'lat':'32.0502263',
-'lng':'34.7725271'
+'lat':'32.0502482',
+'lng':'34.7726251'
 },{
 'rest_id':'3568',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3568&xsltemplate=1',
@@ -800,8 +789,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ויצמן 14',
-'lat':'32.081707900000005',
-'lng':'34.78930840000001'
+'lat':'32.08145780000001',
+'lng':'34.7899028'
 },{
 'rest_id':'3281',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3281&xsltemplate=1',
@@ -844,8 +833,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 34',
-'lat':'32.110397',
-'lng':'34.8418987'
+'lat':'32.1091664',
+'lng':'34.840845200000004'
 },{
 'rest_id':'2974',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2974&xsltemplate=1',
@@ -880,17 +869,6 @@ var addresses = [{
 'lat':'32.0499264',
 'lng':'34.7990595'
 },{
-'rest_id':'3633',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3633&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'ב ייצור מוצרי מזון בע"מ',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'קיבוץ גלויות 106',
-'lat':'32.04791',
-'lng':'34.7769133'
-},{
 'rest_id':'3647',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3647&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -902,17 +880,6 @@ var addresses = [{
 'lat':'32.0662515',
 'lng':'34.7897287'
 },{
-'rest_id':'3625',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3625&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'באגסי',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'סלמה 44',
-'lat':'32.0548749',
-'lng':'34.76720410000001'
-},{
 'rest_id':'3271',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3271&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -921,8 +888,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שטרית 6',
-'lat':'32.1047125',
-'lng':'34.8197486'
+'lat':'32.1047251',
+'lng':'34.8198367'
 },{
 'rest_id':'3384',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3384&xsltemplate=1',
@@ -932,8 +899,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אחמיאיר 33',
-'lat':'32.1247924',
-'lng':'34.80437790000001'
+'lat':'32.1249761',
+'lng':'34.8042936'
 },{
 'rest_id':'3385',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3385&xsltemplate=1',
@@ -990,6 +957,17 @@ var addresses = [{
 'lat':'32.0897218',
 'lng':'34.779725'
 },{
+'rest_id':'3252',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3252&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'בוטיק סנטרל',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'פלורנטין 22',
+'lat':'32.0561903',
+'lng':'34.7690122'
+},{
 'rest_id':'3468',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3468&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -1033,17 +1011,6 @@ var addresses = [{
 'rest_addr':'שנקין 53',
 'lat':'32.0685666',
 'lng':'34.7767156'
-},{
-'rest_id':'3252',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3252&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'בוטיק סנטרל',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'פלורנטין 22',
-'lat':'32.0561903',
-'lng':'34.7690122'
 },{
 'rest_id':'3781',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3781&xsltemplate=1',
@@ -1152,8 +1119,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'רכבת ארלוזרוב',
-'lat':'32.083725',
-'lng':'34.798195'
+'lat':'32.0837128',
+'lng':'34.7969141'
 },{
 'rest_id':'3304',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3304&xsltemplate=1',
@@ -1207,8 +1174,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 2',
-'lat':'32.0745963',
-'lng':'34.7918677'
+'lat':'32.0743897',
+'lng':'34.7921693'
 },{
 'rest_id':'3272',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3272&xsltemplate=1',
@@ -1251,8 +1218,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'היתד 7',
-'lat':'32.048104',
-'lng':'34.76564450000001'
+'lat':'32.0485121',
+'lng':'34.7655202'
 },{
 'rest_id':'3318',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3318&xsltemplate=1',
@@ -1449,8 +1416,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שמואל ברקאי 49',
-'lat':'32.1229676',
-'lng':'34.8089905'
+'lat':'32.1230935',
+'lng':'34.8090132'
 },{
 'rest_id':'3594',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3594&xsltemplate=1',
@@ -1515,8 +1482,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'השוק 32',
-'lat':'32.0585436',
-'lng':'34.7715944'
+'lat':'32.05857570000001',
+'lng':'34.7715265'
 },{
 'rest_id':'3209',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3209&xsltemplate=1',
@@ -1526,8 +1493,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.074626300000006',
-'lng':'34.7918977'
+'lat':'32.0744197',
+'lng':'34.7921993'
 },{
 'rest_id':'3027',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3027&xsltemplate=1',
@@ -1537,8 +1504,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יום טוב 7',
-'lat':'32.0680319',
-'lng':'34.7675202'
+'lat':'32.0680896',
+'lng':'34.7674346'
 },{
 'rest_id':'3276',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3276&xsltemplate=1',
@@ -1625,8 +1592,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הדר יוסף 12',
-'lat':'32.1097873',
-'lng':'34.81850170000001'
+'lat':'32.1097761',
+'lng':'34.8184888'
 },{
 'rest_id':'3243',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3243&xsltemplate=1',
@@ -1812,19 +1779,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'מנחם בגין 154',
-'lat':'32.0793166',
-'lng':'34.7955328'
-},{
-'rest_id':'3584',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3584&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'גוזפין לחם וחברים',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יאשה חפץ 9',
-'lat':'32.1164136',
-'lng':'34.7882466'
+'lat':'32.0793045',
+'lng':'34.7942858'
 },{
 'rest_id':'3418',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3418&xsltemplate=1',
@@ -1856,8 +1812,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שד וושינגטון 15',
-'lat':'32.0561839',
-'lng':'34.7695488'
+'lat':'32.0561771',
+'lng':'34.7696693'
 },{
 'rest_id':'3426',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3426&xsltemplate=1',
@@ -1867,8 +1823,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קויפמן 6',
-'lat':'32.06412280000001',
-'lng':'34.762568400000006'
+'lat':'32.064092800000005',
+'lng':'34.762538400000004'
 },{
 'rest_id':'3462',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3462&xsltemplate=1',
@@ -1878,8 +1834,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אבן גבירול 148',
-'lat':'32.0893123',
-'lng':'34.7827247'
+'lat':'32.0893004',
+'lng':'34.7828302'
 },{
 'rest_id':'3464',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3464&xsltemplate=1',
@@ -1958,17 +1914,6 @@ var addresses = [{
 'lat':'32.0729577',
 'lng':'34.7895259'
 },{
-'rest_id':'3362',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3362&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'גלאטו פקטורי',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אבן גבירול 19',
-'lat':'32.0731978',
-'lng':'34.78165389999999'
-},{
 'rest_id':'3262',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3262&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -2043,8 +1988,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קיבוץ גלויות 106',
-'lat':'32.047940000000004',
-'lng':'34.7769433'
+'lat':'32.04791',
+'lng':'34.7769133'
 },{
 'rest_id':'3472',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3472&xsltemplate=1',
@@ -2131,8 +2076,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.07465630000001',
-'lng':'34.7919277'
+'lat':'32.0744497',
+'lng':'34.7922293'
 },{
 'rest_id':'3031',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3031&xsltemplate=1',
@@ -2164,8 +2109,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'גני התערוכה ביתן 1',
-'lat':'32.0968984',
-'lng':'34.7751221'
+'lat':'32.1055476',
+'lng':'34.8090756'
 },{
 'rest_id':'3307',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3307&xsltemplate=1',
@@ -2175,8 +2120,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 44',
-'lat':'32.07468630000001',
-'lng':'34.791957700000005'
+'lat':'32.07422690000001',
+'lng':'34.79235280000001'
 },{
 'rest_id':'3767',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3767&xsltemplate=1',
@@ -2362,8 +2307,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דרך השלום 51',
-'lat':'32.0680068',
-'lng':'34.8028368'
+'lat':'32.0677303',
+'lng':'34.802842'
 },{
 'rest_id':'3332',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3332&xsltemplate=1',
@@ -2373,8 +2318,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הירקון 121',
-'lat':'32.0824561',
-'lng':'34.7686642'
+'lat':'32.0824632',
+'lng':'34.7686478'
 },{
 'rest_id':'3428',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3428&xsltemplate=1',
@@ -2406,8 +2351,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תחנה מרכזית קומה 4',
-'lat':'32.056456',
-'lng':'34.779211'
+'lat':'32.054373',
+'lng':'34.780071'
 },{
 'rest_id':'3081',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3081&xsltemplate=1',
@@ -2417,8 +2362,8 @@ var addresses = [{
 'kosher_type':'בשרי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הלוחמים 1',
-'lat':'32.0365752',
-'lng':'34.7611515'
+'lat':'32.0364865',
+'lng':'34.7615975'
 },{
 'rest_id':'3223',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3223&xsltemplate=1',
@@ -2472,8 +2417,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קרליבך 7',
-'lat':'32.0669214',
-'lng':'34.7833373'
+'lat':'32.0668327',
+'lng':'34.7832866'
 },{
 'rest_id':'3285',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3285&xsltemplate=1',
@@ -2483,8 +2428,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קפלן 17',
-'lat':'32.073516',
-'lng':'34.784741'
+'lat':'32.0736876',
+'lng':'34.7837738'
 },{
 'rest_id':'3799',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3799&xsltemplate=1',
@@ -2560,8 +2505,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קרמינצקי 2',
-'lat':'32.0668',
-'lng':'34.7936369'
+'lat':'32.0669046',
+'lng':'34.79352009999999'
 },{
 'rest_id':'3775',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3775&xsltemplate=1',
@@ -2571,8 +2516,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי, קומה 1',
-'lat':'32.07471630000001',
-'lng':'34.79198770000001'
+'lat':'32.074479700000005',
+'lng':'34.792259300000005'
 },{
 'rest_id':'3575',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3575&xsltemplate=1',
@@ -2607,17 +2552,6 @@ var addresses = [{
 'lat':'32.08615',
 'lng':'34.7836252'
 },{
-'rest_id':'3188',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3188&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'הפינה הירוקה',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ויצמן 6',
-'lat':'32.0801258',
-'lng':'34.7898816'
-},{
 'rest_id':'3291',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3291&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -2628,6 +2562,17 @@ var addresses = [{
 'rest_addr':'שד רוקח 80',
 'lat':'32.1005683',
 'lng':'34.8016778'
+},{
+'rest_id':'3188',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3188&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'הפינה הירוקה',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'ויצמן 6',
+'lat':'32.0801258',
+'lng':'34.7898816'
 },{
 'rest_id':'3748',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3748&xsltemplate=1',
@@ -2736,8 +2681,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 34',
-'lat':'32.110427',
-'lng':'34.841928700000004'
+'lat':'32.1091964',
+'lng':'34.840875200000006'
 },{
 'rest_id':'3773',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3773&xsltemplate=1',
@@ -2749,17 +2694,6 @@ var addresses = [{
 'rest_addr':'ההגנה 82',
 'lat':'32.0538815',
 'lng':'34.7909896'
-},{
-'rest_id':'3375',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3375&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'ווק קינג',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אילת 45',
-'lat':'32.0585458',
-'lng':'34.7651646'
 },{
 'rest_id':'3810',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3810&xsltemplate=1',
@@ -2879,19 +2813,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קרמינצקי 7',
-'lat':'32.0666945',
-'lng':'34.7958268'
-},{
-'rest_id':'3159',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3159&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'חבש',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הנגב 8',
-'lat':'32.0617297',
-'lng':'34.7786332'
+'lat':'32.0852999',
+'lng':'34.78176759999999'
 },{
 'rest_id':'3263',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3263&xsltemplate=1',
@@ -2934,8 +2857,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'מעפילי אגוז 64',
-'lat':'32.0528987',
-'lng':'34.8106249'
+'lat':'32.0525479',
+'lng':'34.8111513'
 },{
 'rest_id':'3641',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3641&xsltemplate=1',
@@ -2956,8 +2879,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'מעון 4',
-'lat':'32.055992',
-'lng':'34.7669047'
+'lat':'32.0559935',
+'lng':'34.7668779'
 },{
 'rest_id':'3275',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3275&xsltemplate=1',
@@ -3000,8 +2923,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 34',
-'lat':'32.110457000000004',
-'lng':'34.841958700000006'
+'lat':'32.109226400000004',
+'lng':'34.84090520000001'
 },{
 'rest_id':'3380',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3380&xsltemplate=1',
@@ -3047,17 +2970,6 @@ var addresses = [{
 'lat':'32.0743499',
 'lng':'34.7980692'
 },{
-'rest_id':'3356',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3356&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'חומוס כספי הכשר',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הנחושת 1',
-'lat':'32.1089697',
-'lng':'34.8386872'
-},{
 'rest_id':'3561',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3561&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -3068,6 +2980,17 @@ var addresses = [{
 'rest_addr':'בן יהודה 172',
 'lat':'32.0872074',
 'lng':'34.7732765'
+},{
+'rest_id':'3356',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3356&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'חומוס כספי הכשר',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'הנחושת 1',
+'lat':'32.1089697',
+'lng':'34.8386872'
 },{
 'rest_id':'3268',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3268&xsltemplate=1',
@@ -3088,8 +3011,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 5',
-'lat':'32.1067786',
-'lng':'34.8357936'
+'lat':'32.1068466',
+'lng':'34.8357378'
 },{
 'rest_id':'3057',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3057&xsltemplate=1',
@@ -3143,8 +3066,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'גרינבוים 41, תל כביר',
-'lat':'32.041085800000005',
-'lng':'34.7657332'
+'lat':'32.0405152',
+'lng':'34.7657899'
 },{
 'rest_id':'2959',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2959&xsltemplate=1',
@@ -3187,8 +3110,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הנגב 8',
-'lat':'32.0617597',
-'lng':'34.778663200000004'
+'lat':'32.0617297',
+'lng':'34.7786332'
 },{
 'rest_id':'3324',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3324&xsltemplate=1',
@@ -3256,6 +3179,17 @@ var addresses = [{
 'lat':'32.0571486',
 'lng':'34.7748935'
 },{
+'rest_id':'3308',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3308&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'טוסטר',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'קניון עזריאלי קומה א',
+'lat':'32.074256900000016',
+'lng':'34.79238280000001'
+},{
 'rest_id':'3251',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3251&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -3266,17 +3200,6 @@ var addresses = [{
 'rest_addr':'מעון 3',
 'lat':'32.0559164',
 'lng':'34.7668964'
-},{
-'rest_id':'3308',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3308&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'טוסטר',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'קניון עזריאלי קומה א',
-'lat':'32.07422690000001',
-'lng':'34.79235280000001'
 },{
 'rest_id':'3439',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3439&xsltemplate=1',
@@ -3321,17 +3244,6 @@ var addresses = [{
 'rest_addr':'אצ"ל 44',
 'lat':'32.0506778',
 'lng':'34.7916619'
-},{
-'rest_id':'3409',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3409&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'טורוס',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אלנבי 32',
-'lat':'32.0727382',
-'lng':'34.768132'
 },{
 'rest_id':'3540',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3540&xsltemplate=1',
@@ -3418,8 +3330,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קויפמן 6',
-'lat':'32.06415280000001',
-'lng':'34.76259840000001'
+'lat':'32.06412280000001',
+'lng':'34.762568400000006'
 },{
 'rest_id':'3701',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3701&xsltemplate=1',
@@ -3429,19 +3341,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דרך בן צבי 84',
-'lat':'32.0421599',
-'lng':'34.7720546'
-},{
-'rest_id':'3321',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3321&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'טש טש שוילי',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'עולי ציון 15',
-'lat':'32.05188260000001',
-'lng':'34.7580773'
+'lat':'32.0419363',
+'lng':'34.7718396'
 },{
 'rest_id':'2965',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2965&xsltemplate=1',
@@ -3473,8 +3374,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'גרינבוים 41',
-'lat':'32.04111580000001',
-'lng':'34.7657632'
+'lat':'32.041085800000005',
+'lng':'34.7657332'
 },{
 'rest_id':'3215',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3215&xsltemplate=1',
@@ -3495,8 +3396,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'מנחם בגין 154',
-'lat':'32.0793466',
-'lng':'34.7955628'
+'lat':'32.0793345',
+'lng':'34.7943158'
 },{
 'rest_id':'3154',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3154&xsltemplate=1',
@@ -3561,8 +3462,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הדר יוסף 16',
-'lat':'32.1095685',
-'lng':'34.8187663'
+'lat':'32.1095573',
+'lng':'34.8187534'
 },{
 'rest_id':'2983',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2983&xsltemplate=1',
@@ -3627,8 +3528,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 2',
-'lat':'32.074746300000015',
-'lng':'34.79201770000001'
+'lat':'32.07450970000001',
+'lng':'34.79228930000001'
 },{
 'rest_id':'3353',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3353&xsltemplate=1',
@@ -3649,8 +3550,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ארלוזרוב 93',
-'lat':'32.0849517',
-'lng':'34.7840559'
+'lat':'32.0849727',
+'lng':'34.7843281'
 },{
 'rest_id':'3874',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3874&xsltemplate=1',
@@ -3770,8 +3671,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תחנת רכבת מרכז',
-'lat':'32.0837128',
-'lng':'34.7969141'
+'lat':'32.08268400000001',
+'lng':'34.796344'
 },{
 'rest_id':'3446',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3446&xsltemplate=1',
@@ -3827,17 +3728,6 @@ var addresses = [{
 'rest_addr':'עמק ברכה 25',
 'lat':'32.076338',
 'lng':'34.7989887'
-},{
-'rest_id':'3612',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3612&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'לונה פארק קיוסק',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'שד רוקח - גני התערוכה',
-'lat':'32.1055476',
-'lng':'34.8090756'
 },{
 'rest_id':'3550',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3550&xsltemplate=1',
@@ -4098,7 +3988,7 @@ var addresses = [{
 'rest_name':'ליאל או לה קאיס',
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
+'kosher_exp':'02/05/2018',
 'rest_addr':'בן יהודה 226',
 'lat':'32.0919624',
 'lng':'34.7747037'
@@ -4133,8 +4023,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ויצמן 4',
-'lat':'32.078196500000004',
-'lng':'34.7885373'
+'lat':'32.078143700000005',
+'lng':'34.789039900000006'
 },{
 'rest_id':'3486',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3486&xsltemplate=1',
@@ -4144,8 +4034,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תרס"ט א 4',
-'lat':'32.0753627',
-'lng':'34.7827123'
+'lat':'32.0711594',
+'lng':'34.7838457'
 },{
 'rest_id':'3444',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3444&xsltemplate=1',
@@ -4199,8 +4089,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הרצל 20',
-'lat':'32.06193320000001',
-'lng':'34.7700711'
+'lat':'32.0613676',
+'lng':'34.7702482'
 },{
 'rest_id':'3073',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3073&xsltemplate=1',
@@ -4232,8 +4122,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'בית האשל 7',
-'lat':'32.053667',
-'lng':'34.7571214'
+'lat':'32.0539028',
+'lng':'34.7568403'
 },{
 'rest_id':'3084',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3084&xsltemplate=1',
@@ -4400,17 +4290,6 @@ var addresses = [{
 'lat':'32.04765690000001',
 'lng':'34.79527890000001'
 },{
-'rest_id':'3416',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3416&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'מדאמס',
-'rest_type':'מסעדות',
-'kosher_type':'פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ברזיל 17',
-'lat':'32.1115299',
-'lng':'34.79663499999999'
-},{
 'rest_id':'3419',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3419&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -4421,6 +4300,17 @@ var addresses = [{
 'rest_addr':'הדר יוסף 14',
 'lat':'32.1093624',
 'lng':'34.8182384'
+},{
+'rest_id':'3416',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3416&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'מדאמס',
+'rest_type':'מסעדות',
+'kosher_type':'פרוה',
+'kosher_exp':'29/09/2018',
+'rest_addr':'ברזיל 17',
+'lat':'32.1115299',
+'lng':'34.79663499999999'
 },{
 'rest_id':'3737',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3737&xsltemplate=1',
@@ -4496,8 +4386,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'התנופה 4',
-'lat':'32.0513918',
-'lng':'34.7734898'
+'lat':'32.0503926',
+'lng':'34.7732093'
 },{
 'rest_id':'3296',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3296&xsltemplate=1',
@@ -4507,8 +4397,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'צייטלין 22',
-'lat':'32.0791744',
-'lng':'34.7854179'
+'lat':'32.0791386',
+'lng':'34.7849978'
 },{
 'rest_id':'3565',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3565&xsltemplate=1',
@@ -4661,8 +4551,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קיבוץ גלויות 73',
-'lat':'32.0502563',
-'lng':'34.7725571'
+'lat':'32.0502782',
+'lng':'34.7726551'
 },{
 'rest_id':'3682',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3682&xsltemplate=1',
@@ -4674,28 +4564,6 @@ var addresses = [{
 'rest_addr':'ויצמן 24',
 'lat':'32.0839366',
 'lng':'34.7893761'
-},{
-'rest_id':'3570',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3570&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'מיקסלט בע"מ',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יצחק רבין 28',
-'lat':'32.0658978',
-'lng':'34.8034043'
-},{
-'rest_id':'3467',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3467&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'מיראז 83',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אלנבי 108',
-'lat':'32.0648721',
-'lng':'34.7722687'
 },{
 'rest_id':'3596',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3596&xsltemplate=1',
@@ -4837,8 +4705,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'האנגר 1, נמל יפו',
-'lat':'32.0529989',
-'lng':'34.7500188'
+'lat':'32.0499',
+'lng':'34.748992'
 },{
 'rest_id':'3254',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3254&xsltemplate=1',
@@ -4870,8 +4738,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אבא אחימאיר 33',
-'lat':'32.1248224',
-'lng':'34.804407900000015'
+'lat':'32.1250061',
+'lng':'34.804323600000004'
 },{
 'rest_id':'3662',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3662&xsltemplate=1',
@@ -5145,8 +5013,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'נמל יפו',
-'lat':'32.05060290000001',
-'lng':'34.7494063'
+'lat':'32.04993',
+'lng':'34.749022000000004'
 },{
 'rest_id':'3048',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3048&xsltemplate=1',
@@ -5167,8 +5035,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'טאגור 36',
-'lat':'32.1166011',
-'lng':'34.7967827'
+'lat':'32.1166069',
+'lng':'34.7967837'
 },{
 'rest_id':'3865',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3865&xsltemplate=1',
@@ -5277,19 +5145,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.07477630000002',
-'lng':'34.79204770000001'
-},{
-'rest_id':'3448',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3448&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'נינו',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יהודה הלוי 47',
-'lat':'32.0622122',
-'lng':'34.773691'
+'lat':'32.07453970000001',
+'lng':'34.79231930000001'
 },{
 'rest_id':'3329',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3329&xsltemplate=1',
@@ -5478,6 +5335,39 @@ var addresses = [{
 'lat':'32.0544753',
 'lng':'34.8032322'
 },{
+'rest_id':'3334',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3334&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'סודוך',
+'rest_type':'מסעדות',
+'kosher_type':'בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'הירקון 121',
+'lat':'32.0824932',
+'lng':'34.7686778'
+},{
+'rest_id':'3336',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3336&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'סודוך',
+'rest_type':'מסעדות',
+'kosher_type':'בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'דרך השלום 51',
+'lat':'32.0677603',
+'lng':'34.802872'
+},{
+'rest_id':'3337',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3337&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'סודוך',
+'rest_type':'מסעדות',
+'kosher_type':'בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'המסגר 64',
+'lat':'32.0676668',
+'lng':'34.7873161'
+},{
 'rest_id':'3200',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3200&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -5499,39 +5389,6 @@ var addresses = [{
 'rest_addr':'איינשטין 7',
 'lat':'32.1124358',
 'lng':'34.7871326'
-},{
-'rest_id':'3334',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3334&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'סודוך',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הירקון 121',
-'lat':'32.082486100000004',
-'lng':'34.768694200000006'
-},{
-'rest_id':'3336',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3336&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'סודוך',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'דרך השלום 51',
-'lat':'32.0680368',
-'lng':'34.802866800000004'
-},{
-'rest_id':'3337',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3337&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'סודוך',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'המסגר 64',
-'lat':'32.0676668',
-'lng':'34.7873161'
 },{
 'rest_id':'3194',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3194&xsltemplate=1',
@@ -5563,8 +5420,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שביל המפעל 6',
-'lat':'32.0509178',
-'lng':'34.7728994'
+'lat':'32.0508997',
+'lng':'34.7729454'
 },{
 'rest_id':'2958',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2958&xsltemplate=1',
@@ -5643,17 +5500,6 @@ var addresses = [{
 'lat':'32.0875412',
 'lng':'34.773397'
 },{
-'rest_id':'3168',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3168&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'סופר קופיקס',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אסתר המלכה 4',
-'lat':'32.0790418',
-'lng':'34.7743044'
-},{
 'rest_id':'3165',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3165&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -5675,6 +5521,17 @@ var addresses = [{
 'rest_addr':'הרצל 102',
 'lat':'32.0558872',
 'lng':'34.7707256'
+},{
+'rest_id':'3168',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3168&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'סופר קופיקס',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'אסתר המלכה 4',
+'lat':'32.0790418',
+'lng':'34.7743044'
 },{
 'rest_id':'3873',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3873&xsltemplate=1',
@@ -5698,28 +5555,6 @@ var addresses = [{
 'lat':'32.0459065',
 'lng':'34.8053938'
 },{
-'rest_id':'3751',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3751&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'Waffle Bar',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אבן גבירול 61',
-'lat':'32.0787143',
-'lng':'34.7811354'
-},{
-'rest_id':'3284',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3284&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'סושי קונה בר',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'מעון 5',
-'lat':'32.055904',
-'lng':'34.76677859999999'
-},{
 'rest_id':'3452',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3452&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -5728,8 +5563,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'בן אביגדור 19',
-'lat':'32.0670113',
-'lng':'34.7910677'
+'lat':'32.0670032',
+'lng':'34.7910656'
 },{
 'rest_id':'3686',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3686&xsltemplate=1',
@@ -5794,8 +5629,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דיזינגוף 342',
-'lat':'32.0970761',
-'lng':'34.7759354'
+'lat':'32.0970536',
+'lng':'34.7760823'
 },{
 'rest_id':'3655',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3655&xsltemplate=1',
@@ -5829,17 +5664,6 @@ var addresses = [{
 'rest_addr':'לינקולן 13',
 'lat':'32.0667769',
 'lng':'34.782285'
-},{
-'rest_id':'3601',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3601&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'סנדוויץ מרקט',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'דיזינגוף 50',
-'lat':'32.0753762',
-'lng':'34.7754248'
 },{
 'rest_id':'3668',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3668&xsltemplate=1',
@@ -5904,8 +5728,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'טשרנחובסקי 6',
-'lat':'32.0712703',
-'lng':'34.7708467'
+'lat':'32.0712163',
+'lng':'34.7707376'
 },{
 'rest_id':'3608',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3608&xsltemplate=1',
@@ -5937,8 +5761,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קיבוץ גלויות 106',
-'lat':'32.04797000000001',
-'lng':'34.7769733'
+'lat':'32.047940000000004',
+'lng':'34.7769433'
 },{
 'rest_id':'3185',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3185&xsltemplate=1',
@@ -5948,8 +5772,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ויצמן 14',
-'lat':'32.08173790000001',
-'lng':'34.78933840000001'
+'lat':'32.08148780000001',
+'lng':'34.7899328'
 },{
 'rest_id':'3580',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3580&xsltemplate=1',
@@ -6028,17 +5852,6 @@ var addresses = [{
 'lat':'32.0805361',
 'lng':'34.7740726'
 },{
-'rest_id':'3309',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3309&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'פול קפה',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'קניון עזריאלי קומה ג',
-'lat':'32.0748177',
-'lng':'34.791866'
-},{
 'rest_id':'3368',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3368&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -6069,8 +5882,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'שד ירושלים 67',
-'lat':'32.0488636',
-'lng':'34.7589091'
+'lat':'32.0488723',
+'lng':'34.7589979'
 },{
 'rest_id':'3733',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3733&xsltemplate=1',
@@ -6091,8 +5904,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דם המכבים 24',
-'lat':'32.068812',
-'lng':'34.8003045'
+'lat':'32.0688337',
+'lng':'34.8003105'
 },{
 'rest_id':'3119',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3119&xsltemplate=1',
@@ -6102,8 +5915,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'עליה 24',
-'lat':'32.0588911',
-'lng':'34.7733917'
+'lat':'32.085329900000005',
+'lng':'34.78179759999999'
 },{
 'rest_id':'3670',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3670&xsltemplate=1',
@@ -6126,17 +5939,6 @@ var addresses = [{
 'rest_addr':'אבן גבירול 62',
 'lat':'32.0792868',
 'lng':'34.7816028'
-},{
-'rest_id':'3635',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3635&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'פז -"זיו און"',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'דרך הטייסים 126',
-'lat':'32.0459635',
-'lng':'34.8135755'
 },{
 'rest_id':'3504',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3504&xsltemplate=1',
@@ -6201,8 +6003,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דרך בן צבי 84',
-'lat':'32.042189900000004',
-'lng':'34.7720846'
+'lat':'32.041966300000006',
+'lng':'34.7718696'
 },{
 'rest_id':'3491',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3491&xsltemplate=1',
@@ -6223,8 +6025,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'לבונטין 30',
-'lat':'32.0633837',
-'lng':'34.7765305'
+'lat':'32.063155',
+'lng':'34.7765924'
 },{
 'rest_id':'3059',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3059&xsltemplate=1',
@@ -6366,8 +6168,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אצ"ל 44',
-'lat':'32.050707800000005',
-'lng':'34.791691900000004'
+'lat':'32.0506982',
+'lng':'34.7917491'
 },{
 'rest_id':'3083',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3083&xsltemplate=1',
@@ -6388,8 +6190,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 2',
-'lat':'32.07480630000002',
-'lng':'34.792077700000014'
+'lat':'32.07456970000001',
+'lng':'34.79234930000001'
 },{
 'rest_id':'3058',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3058&xsltemplate=1',
@@ -6452,7 +6254,7 @@ var addresses = [{
 'rest_name':'פיצה פפל',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
+'kosher_exp':'18/07/2018',
 'rest_addr':'מסילת ישרים 92',
 'lat':'32.0540143',
 'lng':'34.7777506'
@@ -6509,8 +6311,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.07483630000002',
-'lng':'34.79210770000002'
+'lat':'32.074599700000014',
+'lng':'34.792379300000015'
 },{
 'rest_id':'3508',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3508&xsltemplate=1',
@@ -6520,8 +6322,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'לינקולן 19',
-'lat':'32.0663924',
-'lng':'34.7828435'
+'lat':'32.0664065',
+'lng':'34.7830238'
 },{
 'rest_id':'3080',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3080&xsltemplate=1',
@@ -6597,8 +6399,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יאשה חפץ 9',
-'lat':'32.116443600000004',
-'lng':'34.7882766'
+'lat':'32.1164136',
+'lng':'34.7882466'
 },{
 'rest_id':'3244',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3244&xsltemplate=1',
@@ -6608,8 +6410,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.074866300000025',
-'lng':'34.79213770000002'
+'lat':'32.07462970000002',
+'lng':'34.79240930000002'
 },{
 'rest_id':'3860',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3860&xsltemplate=1',
@@ -6652,8 +6454,8 @@ var addresses = [{
 'kosher_type':'פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הלוחמים 1',
-'lat':'32.036605200000004',
-'lng':'34.7611815'
+'lat':'32.036516500000005',
+'lng':'34.7616275'
 },{
 'rest_id':'3644',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3644&xsltemplate=1',
@@ -6710,17 +6512,6 @@ var addresses = [{
 'lat':'32.0769689',
 'lng':'34.7699012'
 },{
-'rest_id':'3310',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3310&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'פלאפל גינה',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'מנחם בגין 126',
-'lat':'32.0720984',
-'lng':'34.7902793'
-},{
 'rest_id':'3313',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3313&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -6731,6 +6522,17 @@ var addresses = [{
 'rest_addr':'התחיה 15',
 'lat':'32.0497743',
 'lng':'34.7644413'
+},{
+'rest_id':'3310',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3310&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'פלאפל גינה',
+'rest_type':'מסעדות',
+'kosher_type':'בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'מנחם בגין 126',
+'lat':'32.0720984',
+'lng':'34.7902793'
 },{
 'rest_id':'3311',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3311&xsltemplate=1',
@@ -6853,17 +6655,6 @@ var addresses = [{
 'lat':'32.0614088',
 'lng':'34.7910103'
 },{
-'rest_id':'3691',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3691&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'פליישמן',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'מנחם בגין 112',
-'lat':'32.0706561',
-'lng':'34.789274'
-},{
 'rest_id':'3735',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3735&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -6875,16 +6666,16 @@ var addresses = [{
 'lat':'32.062363',
 'lng':'34.7699654'
 },{
-'rest_id':'3179',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3179&xsltemplate=1',
+'rest_id':'3691',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3691&xsltemplate=1',
 'kosher_list_type':'rabanut',
-'rest_name':'פלנצו וילה',
+'rest_name':'פליישמן',
 'rest_type':'מסעדות',
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
-'rest_addr':'קיבוץ גלויות 45',
-'lat':'32.052409',
-'lng':'34.7671344'
+'rest_addr':'מנחם בגין 112',
+'lat':'32.0706561',
+'lng':'34.789274'
 },{
 'rest_id':'3488',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3488&xsltemplate=1',
@@ -6949,8 +6740,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.07489630000003',
-'lng':'34.79216770000002'
+'lat':'32.07465970000002',
+'lng':'34.79243930000002'
 },{
 'rest_id':'3649',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3649&xsltemplate=1',
@@ -6982,8 +6773,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הברזל 34',
-'lat':'32.110487000000006',
-'lng':'34.84198870000001'
+'lat':'32.10925640000001',
+'lng':'34.84093520000001'
 },{
 'rest_id':'3747',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3747&xsltemplate=1',
@@ -7059,8 +6850,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אחמאיר 18',
-'lat':'32.1245597',
-'lng':'34.802026'
+'lat':'32.1245216',
+'lng':'34.8018283'
 },{
 'rest_id':'3661',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3661&xsltemplate=1',
@@ -7092,8 +6883,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ויצמן 14',
-'lat':'32.08176790000001',
-'lng':'34.789368400000015'
+'lat':'32.081517800000015',
+'lng':'34.789962800000005'
 },{
 'rest_id':'3482',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3482&xsltemplate=1',
@@ -7125,8 +6916,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קיבוץ גלויות 106',
-'lat':'32.04800000000001',
-'lng':'34.777003300000004'
+'lat':'32.04797000000001',
+'lng':'34.7769733'
 },{
 'rest_id':'3371',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3371&xsltemplate=1',
@@ -7147,19 +6938,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יום טוב 1',
-'lat':'32.0678614',
-'lng':'34.7673845'
-},{
-'rest_id':'3613',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3613&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'ציפורה אקספרס',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אוניברסיטת תל אביב',
-'lat':'32.113524100000014',
-'lng':'34.804597700000016'
+'lat':'32.0679131',
+'lng':'34.7672941'
 },{
 'rest_id':'3431',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3431&xsltemplate=1',
@@ -7205,17 +6985,6 @@ var addresses = [{
 'lat':'32.0695666',
 'lng':'34.7849943'
 },{
-'rest_id':'3177',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3177&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קדם בית קפה יפואי',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'כיכר קדומים 15',
-'lat':'32.0531585',
-'lng':'34.7511628'
-},{
 'rest_id':'3052',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3052&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -7224,8 +6993,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הרכבת 25',
-'lat':'32.0626124',
-'lng':'34.7799413'
+'lat':'32.0625882',
+'lng':'34.7799697'
 },{
 'rest_id':'3395',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3395&xsltemplate=1',
@@ -7304,17 +7073,6 @@ var addresses = [{
 'lat':'32.0675195',
 'lng':'34.7708444'
 },{
-'rest_id':'3399',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3399&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קופיז',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'לוינסקי 108',
-'lat':'32.0561074',
-'lng':'34.7795597'
-},{
 'rest_id':'3050',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3050&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -7326,6 +7084,17 @@ var addresses = [{
 'lat':'32.05314',
 'lng':'34.7565877'
 },{
+'rest_id':'3399',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3399&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'קופיז',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי,פרוה',
+'kosher_exp':'29/09/2018',
+'rest_addr':'לוינסקי 108',
+'lat':'32.0561074',
+'lng':'34.7795597'
+},{
 'rest_id':'3400',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3400&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -7334,8 +7103,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תחנה מרכזית קומה 4',
-'lat':'32.056486',
-'lng':'34.779241'
+'lat':'32.054403',
+'lng':'34.780101'
 },{
 'rest_id':'3339',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3339&xsltemplate=1',
@@ -7378,8 +7147,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תחנה מרכזית קומה 6',
-'lat':'32.056096000000004',
-'lng':'34.7795562'
+'lat':'32.056151',
+'lng':'34.7795355'
 },{
 'rest_id':'3483',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3483&xsltemplate=1',
@@ -7389,8 +7158,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קינג גורג 47',
-'lat':'32.0738012',
-'lng':'34.7751192'
+'lat':'32.0736585',
+'lng':'34.7750395'
 },{
 'rest_id':'3485',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3485&xsltemplate=1',
@@ -7403,17 +7172,6 @@ var addresses = [{
 'lat':'32.0628381',
 'lng':'34.7822976'
 },{
-'rest_id':'3636',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3636&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קופיקס',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יצחק שדה 27',
-'lat':'32.065236500000005',
-'lng':'34.7877937'
-},{
 'rest_id':'3363',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3363&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -7425,28 +7183,6 @@ var addresses = [{
 'lat':'32.0694309',
 'lng':'34.7722237'
 },{
-'rest_id':'3169',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3169&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קופיקס',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'דיזינגוף 91',
-'lat':'32.0786426',
-'lng':'34.7739128'
-},{
-'rest_id':'3170',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3170&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קופיקס',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הארבעה 2',
-'lat':'32.070286',
-'lng':'34.7827503'
-},{
 'rest_id':'3212',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3212&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -7455,8 +7191,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'לונדון מניסטור',
-'lat':'32.0753927',
-'lng':'34.7827423'
+'lat':'32.0753627',
+'lng':'34.7827123'
 },{
 'rest_id':'3167',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3167&xsltemplate=1',
@@ -7490,6 +7226,39 @@ var addresses = [{
 'rest_addr':'אבן גבירול 92',
 'lat':'32.0828769',
 'lng':'34.7814631'
+},{
+'rest_id':'3169',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3169&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'קופיקס',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי,פרוה',
+'kosher_exp':'29/09/2018',
+'rest_addr':'דיזינגוף 91',
+'lat':'32.07508240000001',
+'lng':'34.77499950000001'
+},{
+'rest_id':'3170',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3170&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'קופיקס',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי,פרוה',
+'kosher_exp':'29/09/2018',
+'rest_addr':'הארבעה 2',
+'lat':'32.070294',
+'lng':'34.7827484'
+},{
+'rest_id':'3636',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3636&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'קופיקס',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי,פרוה',
+'kosher_exp':'29/09/2018',
+'rest_addr':'יצחק שדה 27',
+'lat':'32.065236500000005',
+'lng':'34.7877937'
 },{
 'rest_id':'3178',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3178&xsltemplate=1',
@@ -7530,10 +7299,10 @@ var addresses = [{
 'rest_name':'קייטרינג חתונה אחרת',
 'rest_type':'מסעדות',
 'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
+'kosher_exp':'02/05/2018',
 'rest_addr':'שד"ל 5',
-'lat':'32.0632891',
-'lng':'34.7749437'
+'lat':'32.0632612',
+'lng':'34.7749874'
 },{
 'rest_id':'3150',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3150&xsltemplate=1',
@@ -7554,8 +7323,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קויפמן 6',
-'lat':'32.06418280000001',
-'lng':'34.76262840000001'
+'lat':'32.06415280000001',
+'lng':'34.76259840000001'
 },{
 'rest_id':'3543',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3543&xsltemplate=1',
@@ -7576,8 +7345,8 @@ var addresses = [{
 'kosher_type':'פרוה,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דיזינגוף 147',
-'lat':'32.083004',
-'lng':'34.77395'
+'lat':'32.0828958',
+'lng':'34.7738541'
 },{
 'rest_id':'3777',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3777&xsltemplate=1',
@@ -7730,8 +7499,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 2',
-'lat':'32.07492630000003',
-'lng':'34.792197700000024'
+'lat':'32.07468970000002',
+'lng':'34.79246930000002'
 },{
 'rest_id':'3571',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3571&xsltemplate=1',
@@ -7744,16 +7513,16 @@ var addresses = [{
 'lat':'32.0869557',
 'lng':'34.7823923'
 },{
-'rest_id':'3316',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3316&xsltemplate=1',
+'rest_id':'3047',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3047&xsltemplate=1',
 'kosher_list_type':'rabanut',
-'rest_name':'קפה גו הכשר',
+'rest_name':'קפה גרג',
 'rest_type':'מסעדות',
-'kosher_type':'חלבי',
+'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
-'rest_addr':'קיבוץ גלויות 106',
-'lat':'32.04803000000001',
-'lng':'34.77703330000001'
+'rest_addr':'נמל תל אביב',
+'lat':'32.0966416',
+'lng':'34.7731584'
 },{
 'rest_id':'3441',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3441&xsltemplate=1',
@@ -7766,17 +7535,6 @@ var addresses = [{
 'lat':'32.0692075',
 'lng':'34.786733'
 },{
-'rest_id':'3047',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3047&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קפה גרג',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,מהדרין',
-'kosher_exp':'29/09/2018',
-'rest_addr':'נמל תל אביב',
-'lat':'32.09724300000001',
-'lng':'34.773854'
-},{
 'rest_id':'3516',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3516&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -7785,8 +7543,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דיזינגוף 45 דיזנגוף סנטר',
-'lat':'32.07508240000001',
-'lng':'34.77499950000001'
+'lat':'32.07511240000001',
+'lng':'34.77502950000001'
 },{
 'rest_id':'3506',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3506&xsltemplate=1',
@@ -7818,8 +7576,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי - קומה 2',
-'lat':'32.0744148',
-'lng':'34.7921812'
+'lat':'32.074719700000024',
+'lng':'34.792499300000024'
 },{
 'rest_id':'3208',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3208&xsltemplate=1',
@@ -7851,8 +7609,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אוניברסיטה',
-'lat':'32.113554100000016',
-'lng':'34.80462770000002'
+'lat':'32.113524100000014',
+'lng':'34.804597700000016'
 },{
 'rest_id':'3614',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3614&xsltemplate=1',
@@ -7884,8 +7642,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'עולי ציון 11',
-'lat':'32.0527173',
-'lng':'34.7570971'
+'lat':'32.0527566',
+'lng':'34.7571411'
 },{
 'rest_id':'3305',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3305&xsltemplate=1',
@@ -7920,17 +7678,6 @@ var addresses = [{
 'lat':'32.0593301',
 'lng':'34.7735215'
 },{
-'rest_id':'3501',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3501&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קפה מקאן',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'ראול ולנברג 2',
-'lat':'32.1072377',
-'lng':'34.8343295'
-},{
 'rest_id':'3286',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3286&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -7939,8 +7686,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דיזנגוף סנטר 50',
-'lat':'32.07511240000001',
-'lng':'34.77502950000001'
+'lat':'32.07514240000001',
+'lng':'34.77505950000001'
 },{
 'rest_id':'3056',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3056&xsltemplate=1',
@@ -7972,8 +7719,8 @@ var addresses = [{
 'kosher_type':'חלבי,מהדרין',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 2',
-'lat':'32.07495630000003',
-'lng':'34.792227700000026'
+'lat':'32.07474970000003',
+'lng':'34.79252930000003'
 },{
 'rest_id':'3511',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3511&xsltemplate=1',
@@ -8016,8 +7763,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יום טוב 3',
-'lat':'32.0679183',
-'lng':'34.7674298'
+'lat':'32.0679878',
+'lng':'34.7673535'
 },{
 'rest_id':'3764',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3764&xsltemplate=1',
@@ -8030,17 +7777,6 @@ var addresses = [{
 'lat':'32.0639196',
 'lng':'34.7738327'
 },{
-'rest_id':'3716',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3716&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'קקאו משפטים',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי,בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'בניין משפטים, אוניברסיטת תל אביב',
-'lat':'32.1114924',
-'lng':'34.8037729'
-},{
 'rest_id':'3171',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3171&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -8049,8 +7785,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ההשכלה 5',
-'lat':'32.0654454',
-'lng':'34.7959229'
+'lat':'32.06551',
+'lng':'34.795899'
 },{
 'rest_id':'3554',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3554&xsltemplate=1',
@@ -8082,8 +7818,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.074986300000035',
-'lng':'34.79225770000003'
+'lat':'32.07477970000003',
+'lng':'34.79255930000003'
 },{
 'rest_id':'3003',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3003&xsltemplate=1',
@@ -8093,8 +7829,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'פרי אליעזר 10',
-'lat':'32.0868455',
-'lng':'34.7702281'
+'lat':'32.08653',
+'lng':'34.7695666'
 },{
 'rest_id':'3432',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3432&xsltemplate=1',
@@ -8159,8 +7895,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'בוגרשוב 9',
-'lat':'32.0775315',
-'lng':'34.7687694'
+'lat':'32.0776454',
+'lng':'34.7686284'
 },{
 'rest_id':'3354',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3354&xsltemplate=1',
@@ -8203,8 +7939,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אלנבי 10',
-'lat':'32.073279',
-'lng':'34.7662049'
+'lat':'32.0732853',
+'lng':'34.7659016'
 },{
 'rest_id':'3523',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3523&xsltemplate=1',
@@ -8236,8 +7972,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ויצמן 14',
-'lat':'32.08179790000001',
-'lng':'34.78939840000002'
+'lat':'32.08154780000002',
+'lng':'34.78999280000001'
 },{
 'rest_id':'3583',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3583&xsltemplate=1',
@@ -8250,17 +7986,6 @@ var addresses = [{
 'lat':'32.0846974',
 'lng':'34.7895811'
 },{
-'rest_id':'3678',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3678&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'רולדין',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הברזל 28',
-'lat':'32.109534',
-'lng':'34.8408216'
-},{
 'rest_id':'3680',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3680&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -8271,6 +7996,17 @@ var addresses = [{
 'rest_addr':'אבן גבירול 24',
 'lat':'32.0740857',
 'lng':'34.7819444'
+},{
+'rest_id':'3678',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3678&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'רולדין',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'הברזל 28',
+'lat':'32.109534',
+'lng':'34.8408216'
 },{
 'rest_id':'3330',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3330&xsltemplate=1',
@@ -8291,8 +8027,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קניון עזריאלי קומה 1',
-'lat':'32.07501630000004',
-'lng':'34.79228770000003'
+'lat':'32.07480970000003',
+'lng':'34.79258930000003'
 },{
 'rest_id':'3752',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3752&xsltemplate=1',
@@ -8346,8 +8082,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'מוזס יהודה ונח 22',
-'lat':'32.0756506',
-'lng':'34.7944354'
+'lat':'32.0754869',
+'lng':'34.7949074'
 },{
 'rest_id':'3490',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3490&xsltemplate=1',
@@ -8368,8 +8104,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'קרית עתידים 1',
-'lat':'32.1137588',
-'lng':'34.84244550000001'
+'lat':'32.113677100000004',
+'lng':'34.8436681'
 },{
 'rest_id':'3123',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3123&xsltemplate=1',
@@ -8379,8 +8115,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'הארבעה 2',
-'lat':'32.070316000000005',
-'lng':'34.7827803'
+'lat':'32.070324',
+'lng':'34.782778400000005'
 },{
 'rest_id':'3615',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3615&xsltemplate=1',
@@ -8390,8 +8126,8 @@ var addresses = [{
 'kosher_type':'חלבי,בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אוניברסיטת תל אביב',
-'lat':'32.11358410000002',
-'lng':'34.80465770000002'
+'lat':'32.113554100000016',
+'lng':'34.80462770000002'
 },{
 'rest_id':'2984',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2984&xsltemplate=1',
@@ -8426,17 +8162,6 @@ var addresses = [{
 'lat':'32.054135',
 'lng':'34.7554096'
 },{
-'rest_id':'3125',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3125&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'שאולוב סיסטרס',
-'rest_type':'קונדיטוריות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'יד חרוצים 14',
-'lat':'32.061784',
-'lng':'34.7831207'
-},{
 'rest_id':'3065',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3065&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -8467,8 +8192,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אלנבי 101',
-'lat':'32.0643864',
-'lng':'34.7727545'
+'lat':'32.0644603',
+'lng':'34.7727754'
 },{
 'rest_id':'3780',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3780&xsltemplate=1',
@@ -8478,8 +8203,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'ההגנה 80',
-'lat':'32.0539212',
-'lng':'34.7903888'
+'lat':'32.0539111',
+'lng':'34.7903874'
 },{
 'rest_id':'3753',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3753&xsltemplate=1',
@@ -8522,8 +8247,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תחנה מרכזית, קומה 6',
-'lat':'32.056126000000006',
-'lng':'34.779586200000004'
+'lat':'32.056181',
+'lng':'34.779565500000004'
 },{
 'rest_id':'3498',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3498&xsltemplate=1',
@@ -8613,17 +8338,6 @@ var addresses = [{
 'lat':'32.0636092',
 'lng':'34.7623435'
 },{
-'rest_id':'3666',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3666&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'שומשום בר בריאות',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'הברזל 5',
-'lat':'32.1068086',
-'lng':'34.835823600000005'
-},{
 'rest_id':'3719',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3719&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -8634,6 +8348,17 @@ var addresses = [{
 'rest_addr':'הברזל 38',
 'lat':'32.1102479',
 'lng':'34.8426567'
+},{
+'rest_id':'3666',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3666&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'שומשום בר בריאות',
+'rest_type':'מסעדות',
+'kosher_type':'בשרי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'הברזל 5',
+'lat':'32.1068766',
+'lng':'34.8357678'
 },{
 'rest_id':'3802',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3802&xsltemplate=1',
@@ -8654,8 +8379,8 @@ var addresses = [{
 'kosher_type':'חלבי,פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'אבן גבירול 159',
-'lat':'32.091665',
-'lng':'34.7829556'
+'lat':'32.0917615',
+'lng':'34.7829822'
 },{
 'rest_id':'3858',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3858&xsltemplate=1',
@@ -8667,17 +8392,6 @@ var addresses = [{
 'rest_addr':'לה גרדיה 76',
 'lat':'32.058984800000005',
 'lng':'34.8012754'
-},{
-'rest_id':'3859',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3859&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'שוק נחלת יצחק',
-'rest_type':'ירקנים',
-'kosher_type':'פרוה',
-'kosher_exp':'29/09/2018',
-'rest_addr':'נחלת יצחק 28',
-'lat':'32.0741598',
-'lng':'34.7994669'
 },{
 'rest_id':'2979',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2979&xsltemplate=1',
@@ -8745,6 +8459,17 @@ var addresses = [{
 'lat':'32.0555449',
 'lng':'34.7779607'
 },{
+'rest_id':'3352',
+'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3352&xsltemplate=1',
+'kosher_list_type':'rabanut',
+'rest_name':'שטראוס קפה בי.וי - קפה עלית',
+'rest_type':'מסעדות',
+'kosher_type':'חלבי',
+'kosher_exp':'29/09/2018',
+'rest_addr':'רכבת השלום',
+'lat':'32.073348',
+'lng':'34.793203'
+},{
 'rest_id':'3347',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3347&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -8767,17 +8492,6 @@ var addresses = [{
 'lat':'32.1036459',
 'lng':'34.8046111'
 },{
-'rest_id':'3352',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3352&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'שטראוס קפה בי.וי - קפה עלית',
-'rest_type':'מסעדות',
-'kosher_type':'חלבי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'רכבת השלום',
-'lat':'32.073348',
-'lng':'34.793203'
-},{
 'rest_id':'3346',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3346&xsltemplate=1',
 'kosher_list_type':'rabanut',
@@ -8786,8 +8500,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'תחנת רכבת ההגנה',
-'lat':'32.054124',
-'lng':'34.7847807'
+'lat':'32.054622',
+'lng':'34.784803'
 },{
 'rest_id':'3110',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3110&xsltemplate=1',
@@ -8843,17 +8557,6 @@ var addresses = [{
 'rest_addr':'ארלוזורוב 115',
 'lat':'32.084234',
 'lng':'34.788055'
-},{
-'rest_id':'3434',
-'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3434&xsltemplate=1',
-'kosher_list_type':'rabanut',
-'rest_name':'שמונה תל אביב - eight - tlv',
-'rest_type':'מסעדות',
-'kosher_type':'בשרי',
-'kosher_exp':'29/09/2018',
-'rest_addr':'אבן גבירול 25',
-'lat':'32.0740777',
-'lng':'34.7816141'
 },{
 'rest_id':'3359',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3359&xsltemplate=1',
@@ -8995,8 +8698,8 @@ var addresses = [{
 'kosher_type':'חלבי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יהודה הלוי 47',
-'lat':'32.0622422',
-'lng':'34.773721'
+'lat':'32.0622122',
+'lng':'34.773691'
 },{
 'rest_id':'3248',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3248&xsltemplate=1',
@@ -9039,8 +8742,8 @@ var addresses = [{
 'kosher_type':'בשרי',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יגאל אלון 129',
-'lat':'32.0670738',
-'lng':'34.7929438'
+'lat':'32.0759168',
+'lng':'34.7959023'
 },{
 'rest_id':'3734',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3734&xsltemplate=1',
@@ -9094,8 +8797,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'דרך בן צבי 84',
-'lat':'32.042219900000006',
-'lng':'34.7721146'
+'lat':'32.04199630000001',
+'lng':'34.771899600000005'
 },{
 'rest_id':'3632',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=3632&xsltemplate=1',
@@ -9127,8 +8830,8 @@ var addresses = [{
 'kosher_type':'פרוה',
 'kosher_exp':'29/09/2018',
 'rest_addr':'יאשהחפץ 9',
-'lat':'32.116473600000006',
-'lng':'34.788306600000006'
+'lat':'32.116443600000004',
+'lng':'34.7882766'
 },{
 'rest_id':'2982',
 'rest_rab_url':'http://www.rabanut.co.il/show_item.asp?itemId=185&levelId=60055&itemType=0&id=2982&xsltemplate=1',
@@ -9142,7 +8845,7 @@ var addresses = [{
 'lng':'34.7672617'
 },];
 
-var num_ignored=36;
-var num_corrected=21;
+var num_ignored=34;
+var num_corrected=19;
 var num_hidden=3;
-var parser_duration_seconds=728.343857;
+var parser_duration_seconds=936.991329;
