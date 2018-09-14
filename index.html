@@ -211,7 +211,12 @@
               style="margin-right:5px;"
             >
               </button>
-              <input id="search_input" class="controls" type="text" placeholder="Search in area">
+              <input
+                id="search_input"
+                class="controls"
+                type="text"
+                placeholder="Google search in area"
+              >
           </div>
           <div class="content">
 
@@ -549,7 +554,15 @@
                      if (places.length == 0) {
                        return;
                      }
-
+                     //if single place zoom in on it
+                     if ( places.length == 1 &&
+                       ( places[0].types.includes("restaurant") ||
+                          places[0].types.includes("food")
+                       )){
+                         map.setZoom(17);
+                         map.panTo(places[0].geometry.location);
+                         return;
+                     }
                      // For each place, get the icon, name and location.
                      var bounds = new google.maps.LatLngBounds();
                      places.forEach(function(place) {
