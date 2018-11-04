@@ -14,6 +14,11 @@ var addresses_to_hide = [{
 'rest_addr':'שד יהודית 20 , ת"א - יפו',
 'reason':'Not kosher according to their website. Reported by Risi Adler Finkel',
 'id':'3745'
+},{
+'rest_name':'פטריקס',
+'rest_addr':'רוטשילד 39',
+'reason':'No longer kosher. Open on Friday nights. Confirmed by Ed.',
+'id':'3744'
 },{             
 'rest_name':'דליציה',
 'rest_addr':'בן יהודה 41',
