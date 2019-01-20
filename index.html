@@ -386,8 +386,8 @@
                       }
                     }
                     if (display) {
-                      if (address.rest_type == 'מסעדות' || address.rest_type ==
-                        'קונדיטוריות') {
+                      if (address.rest_type.includes('מסעדות') || address.rest_type.includes(
+                        'קונדיטוריות') || address.rest_type == 'מהדרין') {
                         var colour = "";
                         if (address.kosher_type.includes('חלבי')) {
                           colour += 'blue';
