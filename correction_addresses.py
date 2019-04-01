@@ -194,11 +194,11 @@ correction_addresses = {
 'orig_rest_type':'מסעדות',
 'orig_kosher_type':'פרוה,מהדרין',
 'orig_rest_addr':'הלוחמים 11',
-	
-	
-	
-	
-	
+
+
+
+
+
 'rest_name':'פלאפל א.א.',
 'rest_type':'מסעדות',
 'kosher_type':'פרוה,מהדרין',
@@ -208,7 +208,7 @@ correction_addresses = {
 #'lng':'34.7594088',
 'mod_type':'query',
 'reason':'Address is: הלוחמים 1, Holon ?',
-'id':'3091' 
+'id':'3091'
 },{
 'orig_rest_name':'פלאפל שרעבי',
 'orig_rest_type':'מסעדות',
@@ -453,7 +453,3 @@ correction_addresses = {
 
 
 };
-
-
-
-
