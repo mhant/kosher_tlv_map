@@ -461,7 +461,7 @@
                     } else {
                       clearMarkers();
                     }
-                    for (var i = 1; i < addresses.length; i++) { //now starting from element 1, since 0 is the column titles.
+                    for (var i = 0; i < addresses.length; i++) { //now starting from element 1, since 0 is the column titles.
                       var rest = addresses[i];
                       filterResult = filterAddress(rest, filter_type);
                       if (!filterResult.display)
