@@ -80,7 +80,7 @@
 
   <body>
     <script
-      src="corrected_addresses_bool.js"
+      src="new_addresses_bool.js"
       charset="utf-8"
     ></script>
     <script
@@ -390,7 +390,9 @@
                           address.rest_type.includes('קונדטוריות') ||
                           address.rest_type.includes('קונדיטוריות') ||
                           address.rest_type === 'מהדרין' ||
-                          address.rest_type === 'רגיל') {
+                          address.rest_type === 'רגיל' ||
+                          address.rest_type.includes('מסעדה') ||
+                          address.rest_type.includes('מזנון')) {
                         var colour = "";
                         if (address.kosher_type.includes('חלבי')) {
                           colour += 'blue';
@@ -587,7 +589,7 @@
                    });
                  }
                 </script>
-                <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC5tNymZyzV2DMLnRwYJFJkkGNkCCdTxDI&callback=init">
+                <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBx6VZp6MqkRJtw8buOevgQLBwKq3rxJ4g&callback=init">
                 </script>
   </body>
 </html>
