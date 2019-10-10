@@ -115,17 +115,7 @@
                   <option value="0">all</option>
                   <option value="בשרי">בשרי meaty</option>
                   <option value="חלבי">חלבי dairy</option>
-                  <option value="פרוה">פרוה parve</option>
                   </select>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  name="mehadrin_only_check"
-                  id="mehadrin_only_check"
-                  value="true"
-                  onchange="init(kosher_type_select.value);"
-                > Mehadrin only/מהדרין בלבד<br>
               </li>
               <li>
                 <img src="https://raw.githubusercontent.com/mhant/kosher_tlv_map/master/assets/icon_red.png"
@@ -136,14 +126,7 @@
                 /> milky/חלבי
               </li>
               <li>
-                <img src="https://raw.githubusercontent.com/mhant/kosher_tlv_map/master/assets/icon_green.png"
-                /> parve/פרוה
-              </li>
-              <li>
-                <img src="https://maps.google.com/mapfiles/ms/icons/pink.png" />                hotel/מלון
-              </li>
-              <li>
-                <img src="https://maps.google.com/mapfiles/ms/icons/yellow.png" />                other (butcher/grocer/etc)
+                <img src="https://maps.google.com/mapfiles/ms/icons/yellow.png" />                other/unknown
               </li>
               <li>
                 <div style="padding-left:10px;padding-right:20px;margin-top:10px;margin-bottom:5px;">
@@ -164,21 +147,6 @@
                     id="btn_feedback"
                   >Send feedback/corrections</button>
                 </div>
-              </li>
-              <li>
-                <li>
-                  <div style="padding-left:10px;padding-right:20px;margin-top:10px;margin-bottom:5px;">
-                    <button
-                      class="btn btn-primary"
-                      data-toggle="modal"
-                      data-target="#myModal"
-                      style="width:90%;"
-                      id="btn_data_modif"
-                    >
-                      See our data modifications
-                      </button>
-                  </div>
-                </li>
               </li>
               <li>
                 <span>A Michael, Ed, and Tali Production</span>
@@ -347,7 +315,6 @@
                     var typesToIgnore = ['בית ספר לבישול', 'בתי אבות',
                       'בתי חולים', 'מפעל', 'אולמות אירועים'
                     ];
-                    var mehadrin = false;
                     if (filter_type == "0") {
                       filter_type = null;
                     }
@@ -371,18 +338,6 @@
                       if (filter_type && !address.kosher_type.includes(
                           filter_type)) {
                         display = false;
-                      }
-                    }
-
-                    if (display) {
-                      var kosher_type_array = address.kosher_type.split(",");
-                      for (var i = 0; i < kosher_type_array.length; i++)
-                        if (kosher_type_array[i].match('מהדרין')) {
-                          mehadrin = true;
-                        }
-                      if (mehadrin != true && document.getElementById(
-                          'mehadrin_only_check').checked) {
-                        display = false; //only want mehadrin
                       }
                     }
                     if (display) {
@@ -512,11 +467,6 @@
                     })
                   });
                   //set some on click fucntions yo
-                  $('#btn_data_modif').click(function(e) {
-                    logButtonClick("corrections_list");
-                    $("#myModalLabel").html("Data Corrections");
-                    $("#popup").attr('src', 'corrections_list.html');
-                  });
                   $('#btn_feedback').click(function(e) {
                     logButtonClick("mailto");
                     $(
@@ -526,7 +476,7 @@
                   $('#btn_orig_data').click(function(e) {
                     logButtonClick("original_list");
                     $(
-                      '<a href="http://www.rabanut.co.il/Sapakim/show/comp/comps.aspx" target="blank"></a>'
+                      '<a href="https://rabanut.co.il/%D7%97%D7%99%D7%A4%D7%95%D7%A9-%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%9B%D7%A9%D7%A8%D7%99%D7%9D/" target="blank"></a>'
                     )[0].click();
                   });
                   $("#menu-toggle").click(function(e) {

@@ -9,7 +9,7 @@ import sys
 import urllib
 
 # consts
-milky_list = ['חלבי']
+milky_list = ['חלבי', 'פיצרייה']
 meaty_list = ['בשרי']
 milky = 'חלבי'
 meaty = 'בשרי'
@@ -41,7 +41,7 @@ class KosherParser(HTMLParser):
                         self.k_item['url'] = attr[1]
                     elif (len(attr) > 0):
                         if(attr[1] == 'post_title'):
-                            self.in_post_title = True;
+                            self.in_post_title = True
                         if(attr[1] == 'business_type'):
                             self.in_business_type = True
                         if(attr[1] == 'wrap_address'):
@@ -61,13 +61,13 @@ class KosherParser(HTMLParser):
         if self.in_post_title:
             # print("title is: " + data)
             self.k_item['name'] = data
-            self.in_post_title = False;
+            self.in_post_title = False
         if self.in_business_type:
             self.k_item['rest_type'] = data
-            self.in_business_type = False;
+            self.in_business_type = False
         if self.in_wrap_address:
             self.k_item['address'] = data
-            self.in_wrap_address = False;
+            self.in_wrap_address = False
 
     def handle_endtag(self, tag):
         if tag == 'div':
@@ -78,7 +78,7 @@ class KosherParser(HTMLParser):
                     self.in_it = False
                 self.div_counter = self.div_counter - 1
 
-start_time = datetime.datetime.now();
+start_time = datetime.datetime.now()
 kosher_url = "https://rabanut.co.il/%D7%97%D7%99%D7%A4%D7%95%D7%A9-%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-%D7%9B%D7%A9%D7%A8%D7%99%D7%9D/page/"
 # page over all pages
 for i in range(1,15):
@@ -88,7 +88,7 @@ for i in range(1,15):
     parser = KosherParser()
     parser.feed(r.text)
     # print(str(len(parser.table_data)))
-typesToIgnore = ['בית ספר לבישול', 'בתי אבות','בתי חולים', 'מפעל', 'אולמות אירועים', 'בית מלון', 'איטליז', 'חנות תבלינים']
+typesToIgnore = ['בית ספר לבישול', 'בתי אבות','בתי חולים', 'מפעל', 'אולמות אירועים', 'בית מלון', 'איטליז', 'חנות תבלינים', 'רשתות שיווק', '']
 with codecs.open("new_addresses_bool.js", 'wb',  'utf-8') as f:
     count = 0
     now = datetime.datetime.now()
@@ -98,12 +98,12 @@ with codecs.open("new_addresses_bool.js", 'wb',  'utf-8') as f:
     for rest in parser.table_data:
         name = rest['name'].replace("'","").strip()
         rest_id = str(count)
-        r_type = rest['rest_type'].replace("'","").strip()
+        r_type = rest['rest_type'].replace("'","").strip() if 'rest_type' in rest else '' 
         address = '' if 'address' not in rest else rest['address'].replace("'","").strip()
         location = address + tel_aviv
         rab_url = rest['url']
         if ( r_type in typesToIgnore ):
-            ignored += 1;
+            ignored += 1
             continue;
         # attempt to extract kosher_type
         kosher_type = ""
@@ -169,7 +169,7 @@ with codecs.open("new_addresses_bool.js", 'wb',  'utf-8') as f:
             f.write("//No results. has the google key been used up?\n")
         f.write("\n},")
 
-    f.write("];\n\n");
-    end_time = datetime.datetime.now();
+    f.write("];\n\n")
+    end_time = datetime.datetime.now()
     f.write("var parser_duration_seconds="+str((end_time-start_time).total_seconds())+";\n")
-    f.write("var num_ignored="+str(ignored)+";\n");
+    f.write("var num_ignored="+str(ignored)+";\n")
